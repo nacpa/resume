@@ -7,20 +7,20 @@ body {
   
   h1 {
     font-size: 3em;
-    letter-spacing: 0.3em;
-    padding-top: 0.5em;
-    padding-bottom: 1.4em;
+    letter-spacing: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
   
   h2 {
-    font-size: 2.1em;
+    font-size: 1.5em;
     padding-bottom: 1em;
   }
   
   main {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-top: 2em;
+    margin-top: 3em;
   }
   
   header {
@@ -46,7 +46,7 @@ body {
   hr {
     border: none;
     background-color: lightgray;
-    height: 5px;
+    height: 1px;
   }
   
   h1,
