@@ -4,12 +4,14 @@ body {
     max-width: 960px;
     margin: auto;
   }
+  
   h1 {
-    font-size: 2em;
-    letter-spacing: 0.5em;
-    padding-top: 0.5em;
+    font-size: 2.5em;
+    letter-spacing: 0.6em;
+    padding-top: 0.1em;
     padding-bottom: 0.5em;
   }
+  
   h2 {
     font-size: 1.5em;
     padding-bottom: 0.5em;
@@ -17,19 +19,17 @@ body {
   
   main {
     display: grid;
-    grid-template-columns: 45% 55%;
-    margin-top: 1em;
+    grid-template-columns: 40% 60%;
+    margin-top: 2em;
   }
   
   header {
     text-align: center;
     margin: auto 2em;
-    font-weight:750;
-    /* font-size:1.5em; */
   }
   
   section {
-    margin: auto 1em 2em 2em;
+    margin: auto 1em 3em 2em;
   }
   
   i {
@@ -37,24 +37,33 @@ body {
   }
   
   p {
-    margin: 0.5em auto;
-  }
-  li {
     margin: 0.4em auto;
   }
   
+  li {
+    margin: 0.3em auto;
+  }
+  
   hr {
-    border: none;
-    background-color: rgb(166, 185, 236);
-    height: 0.5px;
+    /* border: none; */
+    background-color: lightgray;
+    height: 1px;
   }
   
   h1,
   h2 {
-    font-weight: 100;
+    font-weight: 600;
     margin: 0;
+    color: rgb(27, 3, 66);
   }
   
   #mainLeft {
-    border-right: 1px solid rgb(166, 185, 236);
+    border-right: 1px solid lightgray;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(44, 70, 108);
+    font-weight: 600;
+    letter-spacing: 0.02em;
   }
