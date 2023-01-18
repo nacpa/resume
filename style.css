@@ -1,7 +1,7 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    max-width: 960px;
+    max-width: 900px;
     /* margin: auto; */
   }
   
@@ -21,16 +21,16 @@ body {
   main {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-top: 1em;
+    margin-top: 0.3em;
   }
   
   header {
     text-align: center;
-    margin:  1em;
+    margin:  0.3em;
   }
   
   section {
-    margin: auto 1em 2em 2em;
+    margin: auto 0.5em 1.5em 1.5em;
   }
   
   i {
