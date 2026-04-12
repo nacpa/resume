@@ -288,7 +288,7 @@ body {
 
 /* Utilities */
 .print-only {
-  display: none;
+  display: none !important;
 }
 
 /* Print styling for ATS compatibility */
@@ -334,7 +334,7 @@ body {
   }
 
   .print-only {
-    display: block;
+    display: block !important;
   }
 
   main {
