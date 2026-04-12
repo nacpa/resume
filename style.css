@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
   --bg-color: #0b1120;
@@ -62,6 +62,7 @@ header::before {
 }
 
 .header-name h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: -1px;
@@ -74,10 +75,12 @@ header::before {
 }
 
 .header-name .subtitle {
+  font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   color: var(--accent-secondary);
   margin-top: 5px;
   font-weight: 500;
+  font-style: italic;
 }
 
 .header-contact {
@@ -124,6 +127,7 @@ section {
 }
 
 section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-main);
@@ -142,7 +146,8 @@ section h2 i {
 }
 
 h3 {
-  font-size: 1.05rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
   color: #fff;
   font-weight: 600;
   margin-bottom: 6px;
@@ -295,13 +300,13 @@ body {
   
   :root {
     --bg-color: #ffffff;
-    --panel-bg: #ffffff;
-    --text-main: #000000;
-    --text-muted: #222222;
-    --accent: #000000;
+    --panel-bg: #fdfdfd;
+    --text-main: #1a1a1a;
+    --text-muted: #333333;
+    --accent: #2c3e50;
     --accent-glow: transparent;
-    --accent-secondary: #000000;
-    --border-color: #cccccc;
+    --accent-secondary: #34495e;
+    --border-color: #e0e0e0;
   }
 
   html, body {
@@ -309,7 +314,7 @@ body {
     print-color-adjust: exact !important;
     font-size: 11.8px;
     background: #ffffff !important;
-    color: #000000 !important;
+    color: #1a1a1a !important;
   }
   
   body {
@@ -340,10 +345,16 @@ body {
     padding: 10px 0 10px 20px;
   }
 
+  /* Format page breaks inside for better PDF reading */
+  .job-item, .edu-item, .skill-category {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
   /* Strip all gradients, glows, and background effects for clean ATS look */
   header {
     background: #ffffff !important;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #2c3e50;
     padding: 5px 0 15px 0;
   }
 
@@ -352,27 +363,27 @@ body {
   }
 
   .header-name h1, .header-name h1 span { 
-    color: #000000 !important; 
+    color: #1a1a1a !important; 
   }
 
   h2, h3, p, a, span, li, i {
-    color: #000000 !important;
+    color: #1a1a1a !important;
   }
 
   /* Format chips into clean outlined tags that ATS can parse cleanly */
   .chips li, .chips span {
-    border: 1px solid #000000;
+    border: 1px solid #1a1a1a;
     background: transparent !important;
     padding: 2px 6px;
     font-size: 0.8rem;
-    color: #000000 !important;
+    color: #1a1a1a !important;
     margin-bottom: 3px;
     box-shadow: none !important;
     transform: none !important;
   }
 
   .bullet-list li::before {
-    color: #000000;
+    color: #34495e;
     content: "•"; /* Clean clear bullet point */
   }
 
