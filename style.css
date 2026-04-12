@@ -294,7 +294,7 @@ body {
 /* Print styling for ATS compatibility */
 @media print {
   @page {
-    margin: 0.8cm;
+    margin: 0.5cm;
     size: A4;
   }
   
@@ -313,9 +313,10 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 11.5px;
+    font-size: 10px;
     background: #ffffff !important;
     color: #000000 !important;
+    line-height: 1.35;
   }
   
   body {
@@ -363,11 +364,25 @@ body {
   header {
     background: #ffffff !important;
     border-bottom: 2px solid #000000;
-    padding: 10px 0 20px 0;
+    padding: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   header::before {
     display: none; /* Hide glow */
+  }
+
+  .header-name { margin-bottom: 5px; }
+  
+  .header-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
   .fas, .fab { display: none !important; }
@@ -388,6 +403,7 @@ body {
 
   h2, h3 {
     color: var(--text-main) !important;
+    margin-bottom: 3px !important;
   }
   
   p, span, li {
@@ -409,7 +425,7 @@ body {
     border: none !important;
     background: transparent !important;
     padding: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #000000 !important;
     margin: 0;
     box-shadow: none !important;
@@ -429,19 +445,20 @@ body {
   }
 
   .column-left section, .column-right section { 
-    margin-bottom: 20px; 
+    margin-bottom: 12px; 
   }
 
   section h2 { 
-    font-size: 1.1rem; 
+    font-size: 1.05rem; 
     border-bottom: 1px solid #000000; 
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
   }
 
-  .job-item { margin-bottom: 18px; }
-  .edu-item { margin-bottom: 10px; }
-  .bullet-list li { margin-bottom: 5px; font-size: 0.98rem; line-height: 1.5; }
+  .job-item { margin-bottom: 10px; }
+  .edu-item { margin-bottom: 6px; }
+  .job-header { margin-bottom: 2px; }
+  .bullet-list li { margin-bottom: 3px; font-size: 0.95rem; line-height: 1.4; }
   .job-date { font-weight: normal; }
 }
 
