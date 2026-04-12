@@ -286,6 +286,11 @@ body {
 .job-item:nth-child(4) { animation-delay: 0.3s; }
 .job-item:nth-child(5) { animation-delay: 0.4s; }
 
+/* Utilities */
+.print-only {
+  display: none;
+}
+
 /* Print styling for ATS compatibility */
 @media print {
   @page {
@@ -295,21 +300,22 @@ body {
   
   :root {
     --bg-color: #ffffff;
-    --panel-bg: #f8fafc; /* Very soft slate gray for contrast */
-    --text-main: #1f2937;
-    --text-muted: #4b5563;
-    --accent: #6d28d9; /* Deep purple/blue for accents */
+    --panel-bg: #ffffff; 
+    --text-main: #000000;
+    --text-muted: #000000;
+    --accent: #000000;
     --accent-glow: transparent;
-    --accent-secondary: #2563eb;
-    --border-color: #e5e7eb;
+    --accent-secondary: #000000;
+    --border-color: #000000;
   }
 
   html, body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     font-size: 11.5px;
-    background: var(--bg-color) !important;
-    color: var(--text-main) !important;
+    background: #ffffff !important;
+    color: #000000 !important;
   }
   
   body {
@@ -326,19 +332,26 @@ body {
     border-radius: 0;
   }
 
+  .print-only {
+    display: block;
+  }
+
   main {
-    grid-template-columns: 32% 68%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .column-left {
-    padding: 20px 20px 20px 0;
-    background: var(--panel-bg);
-    border-right: 1px solid var(--border-color);
+  .column-left, .column-right {
+    display: contents; /* Flattens layout into single column for ATS */
   }
 
-  .column-right {
-    padding: 20px 0 20px 25px;
-  }
+  /* Single column precise ATS reading order */
+  #summary { order: 1; }
+  .skills { order: 2; }
+  #projects { order: 3; }
+  #work-experience { order: 4; }
+  .education { order: 5; }
+  .achievements { order: 6; }
 
   /* Format page breaks inside for better PDF reading */
   .job-item, .edu-item, .skill-category {
@@ -349,13 +362,21 @@ body {
   /* Soft header for print */
   header {
     background: #ffffff !important;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid #000000;
     padding: 10px 0 20px 0;
   }
 
   header::before {
     display: none; /* Hide glow */
   }
+
+  .fas, .fab { display: none !important; }
+
+  .header-contact a[href^="mailto:"]::before { content: "Email: "; font-weight: bold; }
+  .header-contact a[href^="callto:"]::before { content: "Phone: "; font-weight: bold; }
+  .header-contact a[href*="linkedin.com"]::before { content: "LinkedIn: "; font-weight: bold; }
+  .header-contact a[href*="github.com"]::before { content: "GitHub: "; font-weight: bold; }
+  .header-contact a[href*="fluttersolution"]::before { content: "Portfolio: "; font-weight: bold; }
 
   .header-name h1, .header-name h1 span { 
     color: var(--text-main) !important; 
@@ -377,35 +398,46 @@ body {
     color: var(--accent) !important;
   }
 
-  /* Sophisticated chips for print */
+  /* Convert chips to plain comma-separated text */
+  .chips {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
   .chips li, .chips span {
-    border: 1px solid var(--border-color);
-    background: #f1f5f9 !important;
-    padding: 4px 10px;
-    font-size: 0.8rem;
-    color: var(--text-main) !important;
-    border-radius: 12px;
-    margin-bottom: 4px;
+    display: inline;
+    border: none !important;
+    background: transparent !important;
+    padding: 0;
+    font-size: 0.95rem;
+    color: #000000 !important;
+    margin: 0;
     box-shadow: none !important;
     transform: none !important;
   }
 
-  .bullet-list li::before {
-    color: var(--accent-secondary);
-    content: "▹"; 
+  .chips li::after {
+    content: ", ";
+  }
+  .chips li:last-child::after {
+    content: "";
   }
 
-  .column-left section { margin-bottom: 12px; }
-  .column-right section { margin-bottom: 25px; }
+  .bullet-list li::before {
+    color: #000000;
+    content: "•" !important; 
+  }
+
+  .column-left section, .column-right section { 
+    margin-bottom: 20px; 
+  }
 
   section h2 { 
-    font-size: 1.05rem; 
-    border-bottom: 1px solid var(--border-color); 
+    font-size: 1.1rem; 
+    border-bottom: 1px solid #000000; 
     padding-bottom: 5px;
+    margin-bottom: 15px;
   }
-  
-  .column-left section h2 { margin-bottom: 8px; }
-  .column-right section h2 { margin-bottom: 15px; }
 
   .job-item { margin-bottom: 18px; }
   .edu-item { margin-bottom: 10px; }
