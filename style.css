@@ -294,7 +294,7 @@ body {
 /* Print styling for ATS compatibility */
 @media print {
   @page {
-    margin: 0.5cm 1.5cm;
+    margin: 0.3cm 1.5cm;
     size: A4;
   }
   
@@ -313,10 +313,10 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 10px;
+    font-size: 9.8px;
     background: #ffffff !important;
     color: #000000 !important;
-    line-height: 1.35;
+    line-height: 1.25;
   }
   
   body {
@@ -382,7 +382,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
   }
 
   .fas, .fab { display: none !important; }
@@ -418,7 +418,7 @@ body {
   /* Convert chips to plain comma-separated text */
   .chips {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   
   .chips li, .chips span {
@@ -426,7 +426,7 @@ body {
     border: none !important;
     background: transparent !important;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #000000 !important;
     margin: 0;
     box-shadow: none !important;
@@ -446,20 +446,20 @@ body {
   }
 
   .column-left section, .column-right section { 
-    margin-bottom: 12px; 
+    margin-bottom: 8px; 
   }
 
   section h2 { 
     font-size: 1.05rem; 
     border-bottom: 1px solid #000000; 
-    padding-bottom: 2px;
-    margin-bottom: 6px;
+    padding-bottom: 1px;
+    margin-bottom: 4px;
   }
 
-  .job-item { margin-bottom: 10px; }
-  .edu-item { margin-bottom: 6px; }
-  .job-header { margin-bottom: 2px; }
-  .bullet-list li { margin-bottom: 3px; font-size: 0.95rem; line-height: 1.4; }
+  .job-item { margin-bottom: 8px; }
+  .edu-item { margin-bottom: 4px; }
+  .job-header { margin-bottom: 1px; }
+  .bullet-list li { margin-bottom: 2px; font-size: 0.95rem; line-height: 1.3; }
   .job-date { font-weight: normal; }
 }
 
