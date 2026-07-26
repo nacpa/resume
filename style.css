@@ -294,7 +294,7 @@ body {
 /* Print styling for ATS compatibility */
 @media print {
   @page {
-    margin: 0.3cm 1.5cm;
+    margin: 0.5cm 1.2cm 1.2cm 1.2cm;
     size: A4;
   }
   
@@ -313,16 +313,17 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 9.8px;
+    font-size: 9.5px;
     background: #ffffff !important;
     color: #000000 !important;
-    line-height: 1.25;
+    line-height: 1.4;
   }
   
   body {
     padding: 0;
     margin: 0;
     display: block;
+    animation: none !important;
   }
 
   .resume-container {
@@ -347,12 +348,13 @@ body {
   }
 
   /* Single column precise ATS reading order */
-  #summary { order: 1; }
-  .skills { order: 2; }
-  #projects { order: 3; }
+  #summary         { order: 1; }
+  .skills          { order: 2; }
+  #projects        { order: 3; }
   #work-experience { order: 4; }
-  .education { order: 5; }
-  .achievements { order: 6; }
+  #internship      { order: 5; }
+  .education       { order: 6; }
+  .achievements    { order: 7; }
 
   /* Format page breaks inside for better PDF reading */
   .job-item, .edu-item, .skill-category {
@@ -375,14 +377,14 @@ body {
     display: none; /* Hide glow */
   }
 
-  .header-name { margin-bottom: 5px; }
+  .header-name { margin-bottom: 2px; }
   
   .header-contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
   }
 
   .fas, .fab { display: none !important; }
@@ -395,16 +397,19 @@ body {
   .header-contact a[href*="fluttersolution"]::before { content: "Blog: "; font-weight: bold; }
 
   .header-name h1, .header-name h1 span { 
-    color: var(--text-main) !important; 
+    color: var(--text-main) !important;
+    font-size: 1.6rem !important;
   }
 
   .header-name .subtitle {
     color: var(--accent-secondary) !important;
+    font-size: 0.85rem !important;
+    margin-top: 1px;
   }
 
   h2, h3 {
     color: var(--text-main) !important;
-    margin-bottom: 3px !important;
+    margin-bottom: 1px !important;
   }
   
   p, span, li {
@@ -440,27 +445,73 @@ body {
     content: "";
   }
 
+  .bullet-list {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+
+  .bullet-list li {
+    position: relative;
+    padding-left: 12px;
+    margin-left: 0;
+  }
+
   .bullet-list li::before {
+    content: "•" !important;
     color: #000000;
-    content: "•" !important; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: inherit;
   }
 
   .column-left section, .column-right section { 
-    margin-bottom: 8px; 
+    margin-bottom: 4.3px; 
+  }
+
+  section {
+    margin-bottom: 4.3px;
   }
 
   section h2 { 
-    font-size: 1.05rem; 
+    font-size: 0.95rem;
     border-bottom: 1px solid #000000; 
     padding-bottom: 1px;
-    margin-bottom: 4px;
+    margin-bottom: 2.9px;
+    margin-top: 4.3px;
   }
 
-  .job-item { margin-bottom: 8px; }
-  .edu-item { margin-bottom: 4px; }
-  .job-header { margin-bottom: 1px; }
-  .bullet-list li { margin-bottom: 2px; font-size: 0.95rem; line-height: 1.3; }
-  .job-date { font-weight: normal; }
+  .skill-category { margin-bottom: 2.9px; }
+  .skill-category h3 { font-size: 0.83rem; margin-bottom: 1.4px; }
+
+  .job-header {
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  .job-header h3 {
+    display: inline;
+    font-size: 0.93rem;
+    margin-bottom: 0;
+  }
+
+  .job-date {
+    display: inline;
+    font-size: 0.83rem;
+    font-weight: bold;
+    margin-left: 6px;
+    color: #000000 !important;
+  }
+
+  h3 { font-size: 0.93rem; margin-bottom: 0; }
+  .bullet-list li { margin-bottom: 1.4px; font-size: 0.88rem; line-height: 1.38; }
+  .bullet-list li::before { top: 0; }
+  .job-date { font-weight: bold; font-size: 0.83rem; }
+  .minor-text { font-size: 0.86rem; line-height: 1.35; }
+  .edu-item .institute { font-size: 0.85rem; }
+  .edu-item .stats { font-size: 0.83rem; }
+  .job-item { margin-bottom: 4.3px; }
+  .edu-item { margin-bottom: 2.9px; }
 }
 
 /* Responsive adjustment for small screens */
