@@ -67,6 +67,7 @@ header::before {
   letter-spacing: -1px;
   color: #fff;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .header-name h1 span {
@@ -399,6 +400,7 @@ body {
   .header-name h1, .header-name h1 span { 
     color: var(--text-main) !important;
     font-size: 1.6rem !important;
+    letter-spacing: 4px;
   }
 
   .header-name .subtitle {
