@@ -239,7 +239,7 @@
                 <a href="callto:+917523893279" class="hire-btn-secondary"><i class="fas fa-phone-alt"></i> Direct Call</a>
             </div>
             <div class="hire-timer-bar" id="hireTimerBar">
-                <span>Offer banner closing in <strong id="hireTimerCount">9</strong>s</span>
+                <span>Offer banner closing in <strong id="hireTimerCount">20</strong>s</span>
                 <div class="timer-progress-track">
                     <div class="timer-progress-fill" id="timerProgressFill"></div>
                 </div>
@@ -281,10 +281,10 @@
                 if (hireModalOverlay) {
                     hireModalOverlay.classList.add('visible');
 
-                    // Start 9-second countdown & progress bar fill
-                    let remainingSeconds = 9;
+                    // Start 20-second countdown & progress bar fill
+                    let remainingSeconds = 20;
                     if (timerProgressFill) {
-                        timerProgressFill.style.transition = 'width 9s linear';
+                        timerProgressFill.style.transition = 'width 20s linear';
                         timerProgressFill.style.width = '0%';
                     }
 
@@ -295,7 +295,7 @@
                         }
                     }, 1000);
 
-                    // Auto minimize after 9 seconds
+                    // Auto minimize after 20 seconds
                     setTimeout(() => {
                         clearInterval(countdownInterval);
                         minimizeHireModal();
