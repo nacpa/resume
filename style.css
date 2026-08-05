@@ -408,8 +408,8 @@ h3 {
   .header-contact a[href^="callto:"]::before { content: "Phone: "; font-weight: bold; }
   .header-contact a[href*="linkedin.com"]::before { content: "LinkedIn: "; font-weight: bold; }
   .header-contact a[href*="github.com/nacpa"]::before { content: "GitHub: "; font-weight: bold; }
-  .header-contact a[href*="nacpa.github.io"]::before { content: "Web Resume: "; font-weight: bold; }
-  .header-contact a[href*="fluttersolution"]::before { content: "Blog: "; font-weight: bold; }
+  .header-contact a.portfolio-print-link::before { content: "Portfolio: "; font-weight: bold; }
+  .header-contact a.blog-print-link::before { content: "Blog: "; font-weight: bold; }
 
   .header-name h1, .header-name h1 span { 
     color: var(--text-main) !important;
