@@ -397,9 +397,14 @@ h3 {
   .header-contact {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 5px;
+    gap: 6px;
+  }
+  .header-contact a {
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: -0.35px;
   }
 
   .fas, .fab { display: none !important; }
@@ -410,6 +415,7 @@ h3 {
   .header-contact a[href*="github.com/nacpa"]::before { content: "GitHub: "; font-weight: bold; }
   .header-contact a.portfolio-print-link::before { content: "Portfolio: "; font-weight: bold; }
   .header-contact a.blog-print-link::before { content: "Blog: "; font-weight: bold; }
+  .header-contact a.project-print-link::before { content: "Project: "; font-weight: bold; }
 
   .header-name h1, .header-name h1 span { 
     color: var(--text-main) !important;

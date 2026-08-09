@@ -35,6 +35,7 @@
                 <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank"><i class="fab fa-linkedin-in"></i> @nachiketapandey</a>
                 <a href="https://portfolio.fluttersolution.com/" class="print-only portfolio-print-link" target="_blank"><i class="fas fa-globe"></i> portfolio.fluttersolution.com</a>
                 <a href="https://www.fluttersolution.com/" class="blog-print-link" target="_blank"><i class="fas fa-pen-nib"></i> fluttersolution.com</a>
+                <a href="https://nabh.fluttersolution.com/" class="project-print-link" target="_blank"><i class="fas fa-robot"></i> nabh.fluttersolution.com</a>
             </div>
         </header>
 
@@ -150,13 +151,15 @@
                     <h2><i class="fas fa-project-diagram"></i> PROJECTS</h2>
                     <div class="job-item">
                         <div class="job-header">
-                            <h3>Nabh (Personal Project) <span>| Agentic AI Application for Agritech</span></h3>
+                            <h3><a href="https://nabh.fluttersolution.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Nabh AI <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 4px;"></i></a> (Personal Project) <span>| Agentic AI Agricultural Coordination Platform</span></h3>
                             <span class="job-date">Current</span>
                         </div>
                         <ul class="bullet-list">
-                            <li>Architected and built an end-to-end agentic AI application tackling crop stubble burning in North India, designing for two distinct user personas — farmers and city residents — with tailored feature sets and journeys for each.</li>
-                            <li>Built a Flutter front-end integrated with a FastAPI backend, orchestrating Gemini Vision for AI-driven features including a Photo-to-Plan Field Scan that analyzes field images to generate actionable stubble-management plans.</li>
-                            <li>Designed a Stubble Marketplace and Profit Calculator, connecting farmers to buyers for crop residue while modeling the economic case for alternatives to burning, using live data from Agmarknet and eNAM.</li>
+                            <li>Engineered an Agentic AI-driven platform featuring a Stateful Conversational Agent with an LLM backbone to autonomously mitigate crop stubble burning through intelligent interventions.</li>
+                            <li>Pioneered a GenUI (Generative UI) architecture leveraging LLM Function Calling to dynamically generate and stream real-time UI components (e.g., interactive hotspot overlays) based on user intent.</li>
+                            <li>Orchestrated dynamic Context Injection by feeding real-time environmental data (Open-Meteo API) and financial subsidy metrics into system prompts, enabling region-specific, multimodal messaging.</li>
+                            <li>Implemented robust Context Window Management on a FastAPI backend, dynamically summarizing and truncating chat history to optimize token limits and maintain stateful memory across sessions.</li>
+                            <li>Built low-latency multimodal streaming infrastructure and established fully automated CI/CD pipelines for seamless deployment of the AI-native platform.</li>
                         </ul>
                     </div>
                 </section>
@@ -394,6 +397,24 @@
                 initialY = currentY;
                 isDragging = false;
             }
+        }
+    </script>
+    <!-- Version control for PDF export -->
+    <script src="./version.js"></script>
+    <script>
+        if (typeof RESUME_VERSION !== 'undefined') {
+            const originalTitle = document.title;
+            
+            // Try to set it before print so the exported PDF takes this filename
+            window.addEventListener('beforeprint', () => {
+                document.title = `Resume_Nachiketa-${RESUME_VERSION}`;
+            });
+            window.addEventListener('afterprint', () => {
+                document.title = originalTitle;
+            });
+
+            // As a fallback for some browsers that capture title immediately, also just set it globally
+            document.title = `Resume_Nachiketa-${RESUME_VERSION}`;
         }
     </script>
 </body>
