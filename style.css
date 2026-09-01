@@ -31,7 +31,7 @@ body {
   width: 100%;
   max-width: 1000px;
   background-color: var(--bg-color);
-  box-shadow: 0 10px 50px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
   border-radius: 16px;
   overflow: hidden;
   display: flex;
@@ -43,8 +43,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
-  background: linear-gradient(135deg, rgba(30,41,59,0.9), rgba(15,23,42,1));
+  padding: 24px 28px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 1));
   border-bottom: 2px solid var(--accent);
   position: relative;
   overflow: hidden;
@@ -53,8 +53,10 @@ header {
 header::before {
   content: '';
   position: absolute;
-  top: -50%; right: -20%;
-  width: 300px; height: 300px;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
   background: var(--accent-glow);
   filter: blur(80px);
   border-radius: 50%;
@@ -94,6 +96,7 @@ header::before {
   font-size: 1.25rem;
   color: var(--accent-secondary);
   margin-top: 5px;
+  margin-bottom: 6px;
   font-weight: 500;
 }
 
@@ -128,19 +131,17 @@ main {
 
 .column-left {
   background-color: var(--panel-bg);
-  padding: 35px 30px;
+  padding: 24px 20px;
   border-right: 1px solid var(--border-color);
 }
 
 .column-right {
-  padding: 35px 40px;
+  padding: 24px 24px;
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
-
-
 
 section h2 {
   font-size: 1.15rem;
@@ -148,12 +149,12 @@ section h2 {
   color: var(--text-main);
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 section h2 i {
@@ -164,12 +165,12 @@ h3 {
   font-size: 1.05rem;
   color: #fff;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 /* Skills */
 .skill-category {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .skill-category h3 {
@@ -186,7 +187,8 @@ h3 {
   list-style: none;
 }
 
-.chips li, .chips span {
+.chips li,
+.chips span {
   background: rgba(139, 92, 246, 0.15);
   color: #c4b5fd;
   border: 1px solid rgba(139, 92, 246, 0.3);
@@ -197,19 +199,22 @@ h3 {
   transition: all 0.2s ease;
 }
 
-.chips li:hover, .chips span:hover {
+.chips li:hover,
+.chips span:hover {
   background: rgba(139, 92, 246, 0.35);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
 }
 
-.soft-chips li, .soft-chips span {
+.soft-chips li,
+.soft-chips span {
   background: transparent;
   color: var(--text-muted);
   border: 1px solid var(--border-color);
 }
 
-.soft-chips li:hover, .soft-chips span:hover {
+.soft-chips li:hover,
+.soft-chips span:hover {
   background: var(--border-color);
   transform: translateY(-2px);
   box-shadow: none;
@@ -217,7 +222,7 @@ h3 {
 
 /* Education */
 .edu-item {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .edu-item .institute {
@@ -235,14 +240,16 @@ h3 {
 .bullet-list {
   list-style: none;
 }
+
 .bullet-list li {
   position: relative;
   padding-left: 18px;
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
+
 .bullet-list li::before {
   content: "▹";
   position: absolute;
@@ -250,6 +257,7 @@ h3 {
   color: var(--accent);
   font-weight: bold;
 }
+
 .bullet-list li b {
   color: var(--text-main);
   font-weight: 600;
@@ -257,7 +265,7 @@ h3 {
 
 /* Experience / Projects */
 .job-item {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .job-header {
@@ -288,18 +296,38 @@ h3 {
 
 /* Animations */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.job-item, .edu-item, .skill-category {
+.job-item,
+.edu-item,
+.skill-category {
   animation: fadeInUp 0.6s ease-out both;
 }
 
-.job-item:nth-child(2) { animation-delay: 0.1s; }
-.job-item:nth-child(3) { animation-delay: 0.2s; }
-.job-item:nth-child(4) { animation-delay: 0.3s; }
-.job-item:nth-child(5) { animation-delay: 0.4s; }
+.job-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.job-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.job-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.job-item:nth-child(5) {
+  animation-delay: 0.4s;
+}
 
 /* Utilities */
 .print-only {
@@ -309,13 +337,13 @@ h3 {
 /* Print styling for ATS compatibility */
 @media print {
   @page {
-    margin: 0.5cm 1.2cm 1.2cm 1.2cm;
-    size: A4;
+    margin: 0;
+    size: A4 portrait;
   }
-  
+
   :root {
     --bg-color: #ffffff;
-    --panel-bg: #ffffff; 
+    --panel-bg: #ffffff;
     --text-main: #000000;
     --text-muted: #000000;
     --accent: #000000;
@@ -324,19 +352,20 @@ h3 {
     --border-color: #000000;
   }
 
-  html, body {
+  html,
+  body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 9.5px;
+    font-size: 9.5px !important;
     background: #ffffff !important;
     color: #000000 !important;
     line-height: 1.4;
   }
-  
+
   body {
-    padding: 0;
-    margin: 0;
+    padding: 4mm 6mm !important;
+    margin: 0 !important;
     display: block;
     animation: none !important;
   }
@@ -358,21 +387,45 @@ h3 {
     flex-direction: column;
   }
 
-  .column-left, .column-right {
-    display: contents; /* Flattens layout into single column for ATS */
+  .column-left,
+  .column-right {
+    display: contents;
+    /* Flattens layout into single column for ATS */
   }
 
   /* Single column precise ATS reading order */
-  #summary         { order: 1; }
-  .skills          { order: 2; }
-  #work-experience { order: 3; }
-  #projects        { order: 4; }
-  #internship      { order: 5; }
-  .education       { order: 6; }
-  .achievements    { order: 7; }
+  #summary {
+    order: 1;
+  }
+
+  .skills {
+    order: 2;
+  }
+
+  #work-experience {
+    order: 3;
+  }
+
+  #projects {
+    order: 4;
+  }
+
+  #internship {
+    order: 5;
+  }
+
+  .education {
+    order: 6;
+  }
+
+  .achievements {
+    order: 7;
+  }
 
   /* Format page breaks inside for better PDF reading */
-  .job-item, .edu-item, .skill-category {
+  .job-item,
+  .edu-item,
+  .skill-category {
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -388,12 +441,16 @@ h3 {
     text-align: center;
   }
 
-  header::before, .profile-img {
-    display: none !important; /* Hide glow & avatar for ATS print export */
+  header::before,
+  .profile-img {
+    display: none !important;
+    /* Hide glow & avatar for ATS print export */
   }
 
-  .header-name { margin-bottom: 2px; }
-  
+  .header-name {
+    margin-bottom: 2px;
+  }
+
   .header-contact {
     display: flex;
     flex-direction: row;
@@ -401,43 +458,82 @@ h3 {
     justify-content: center;
     gap: 6px;
   }
+
   .header-contact a {
     display: inline-block;
     font-size: 9px;
-    letter-spacing: -0.35px;
+    letter-spacing: normal !important;
   }
 
-  .fas, .fab { display: none !important; }
+  .fas,
+  .fab {
+    display: none !important;
+  }
 
-  .header-contact a[href^="mailto:"]::before { content: "Email: "; font-weight: bold; }
-  .header-contact a[href^="callto:"]::before { content: "Phone: "; font-weight: bold; }
-  .header-contact a[href*="linkedin.com"]::before { content: "LinkedIn: "; font-weight: bold; }
-  .header-contact a[href*="github.com/nacpa"]::before { content: "GitHub: "; font-weight: bold; }
-  .header-contact a.portfolio-print-link::before { content: "Portfolio: "; font-weight: bold; }
-  .header-contact a.blog-print-link::before { content: "Blog: "; font-weight: bold; }
-  .header-contact a.project-print-link::before { content: "Project: "; font-weight: bold; }
+  .header-contact a[href^="mailto:"]::before {
+    content: "Email: ";
+    font-weight: bold;
+  }
 
-  .header-name h1, .header-name h1 span { 
+  .header-contact a[href^="callto:"]::before {
+    content: "Phone: ";
+    font-weight: bold;
+  }
+
+  .header-contact a[href*="linkedin.com"]::before {
+    content: "LinkedIn: ";
+    font-weight: bold;
+  }
+
+  .header-contact a[href*="github.com/nacpa"]::before {
+    content: "GitHub: ";
+    font-weight: bold;
+  }
+
+  .header-contact a.portfolio-print-link::before {
+    content: "Portfolio: ";
+    font-weight: bold;
+  }
+
+  .header-contact a.blog-print-link::before {
+    content: "Blog: ";
+    font-weight: bold;
+  }
+
+  .header-contact a.project-print-link::before {
+    content: "Project: ";
+    font-weight: bold;
+  }
+
+  .header-name h1,
+  .header-name h1 span {
     color: var(--text-main) !important;
     font-size: 1.6rem !important;
-    letter-spacing: 4px;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .header-name .subtitle {
     color: var(--accent-secondary) !important;
     font-size: 0.85rem !important;
-    margin-top: 1px;
+    margin-top: 2px !important;
+    margin-bottom: 4px !important;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     color: var(--text-main) !important;
     margin-bottom: 1px !important;
   }
-  
-  p, span, li {
+
+  p,
+  span,
+  li {
     color: var(--text-muted) !important;
   }
-  
+
   i {
     color: var(--accent) !important;
   }
@@ -447,8 +543,9 @@ h3 {
     display: block;
     margin-bottom: 6px;
   }
-  
-  .chips li, .chips span {
+
+  .chips li,
+  .chips span {
     display: inline;
     border: none !important;
     background: transparent !important;
@@ -463,6 +560,7 @@ h3 {
   .chips li::after {
     content: ", ";
   }
+
   .chips li:last-child::after {
     content: "";
   }
@@ -487,24 +585,31 @@ h3 {
     line-height: inherit;
   }
 
-  .column-left section, .column-right section { 
-    margin-bottom: 5px; 
+  .column-left section,
+  .column-right section {
+    margin-bottom: 5px;
   }
 
   section {
     margin-bottom: 5px;
   }
 
-  section h2 { 
+  section h2 {
     font-size: 1.0rem;
-    border-bottom: 1.2px solid #000000; 
+    border-bottom: 1.2px solid #000000;
     padding-bottom: 1px;
     margin-bottom: 3.5px;
     margin-top: 5px;
   }
 
-  .skill-category { margin-bottom: 3.5px; }
-  .skill-category h3 { font-size: 0.87rem; margin-bottom: 2px; }
+  .skill-category {
+    margin-bottom: 3.5px;
+  }
+
+  .skill-category h3 {
+    font-size: 0.87rem;
+    margin-bottom: 2px;
+  }
 
   .job-header {
     display: block;
@@ -525,17 +630,51 @@ h3 {
     color: #000000 !important;
   }
 
-  h3 { font-size: 0.97rem; margin-bottom: 0; }
-  .bullet-list li { margin-bottom: 2.2px; font-size: 0.91rem; line-height: 1.42; }
-  .bullet-list li::before { top: 0; }
-  .job-date { font-weight: bold; font-size: 0.86rem; }
-  .minor-text { font-size: 0.90rem; line-height: 1.40; }
-  .edu-item .institute { font-size: 0.88rem; }
-  .edu-item .stats { font-size: 0.86rem; }
-  .job-item { margin-bottom: 6px; }
-  .edu-item { margin-bottom: 4px; }
+  h3 {
+    font-size: 0.97rem;
+    margin-bottom: 0;
+  }
 
-  .fab-container, .hire-modal-overlay, .hire-pill-trigger, .print-only-hide {
+  .bullet-list li {
+    margin-bottom: 2.2px;
+    font-size: 0.91rem;
+    line-height: 1.42;
+  }
+
+  .bullet-list li::before {
+    top: 0;
+  }
+
+  .job-date {
+    font-weight: bold;
+    font-size: 0.86rem;
+  }
+
+  .minor-text {
+    font-size: 0.90rem;
+    line-height: 1.40;
+  }
+
+  .edu-item .institute {
+    font-size: 0.88rem;
+  }
+
+  .edu-item .stats {
+    font-size: 0.86rem;
+  }
+
+  .job-item {
+    margin-bottom: 6px;
+  }
+
+  .edu-item {
+    margin-bottom: 4px;
+  }
+
+  .fab-container,
+  .hire-modal-overlay,
+  .hire-pill-trigger,
+  .print-only-hide {
     display: none !important;
   }
 }
@@ -559,9 +698,9 @@ h3 {
   opacity: 0;
   visibility: hidden;
   transform: translateY(30px) scale(0.9);
-  transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-              visibility 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-              transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    visibility 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .fab-container.visible {
@@ -774,7 +913,8 @@ h3 {
   margin-bottom: 18px;
 }
 
-.hire-btn-primary, .hire-btn-secondary {
+.hire-btn-primary,
+.hire-btn-secondary {
   flex: 1;
   display: inline-flex;
   align-items: center;
@@ -884,44 +1024,59 @@ h3 {
 /* Responsive adjustment for small screens */
 @media screen and (max-width: 768px) {
   body {
-    padding: 15px; /* Reduced outer padding for more content space */
+    padding: 15px;
+    /* Reduced outer padding for more content space */
   }
+
   .resume-container {
     border-radius: 12px;
   }
+
   main {
     display: flex;
     flex-direction: column;
   }
+
   .column-left {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
     padding: 30px 20px;
   }
+
   .column-right {
     padding: 30px 20px;
   }
+
   header {
     flex-direction: column;
     text-align: center;
     gap: 15px;
     padding: 35px 20px;
   }
+
   .header-main-info {
     flex-direction: column;
     text-align: center;
     gap: 12px;
   }
-  .header-name h1 { font-size: 2.3rem; }
-  .header-name .subtitle { font-size: 1.1rem; }
-  .header-contact { 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+
+  .header-name h1 {
+    font-size: 2.3rem;
+  }
+
+  .header-name .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .header-contact {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 10px;
   }
+
   .fab-container {
     bottom: 20px;
     right: 20px;
