@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,10 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" href="./favicon.svg" />
     <!-- Modern Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
     <link href="./style.css?v=1.1" rel="stylesheet" />
     <!-- PostHog Analytics -->
     <script>
@@ -29,6 +30,34 @@
 </head>
 
 <body>
+  <div class="dot-grid-bg print-only-hide" aria-hidden="true"></div>
+  <div class="night-sky print-only-hide" id="night-sky" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <div class="ide-frame">
+    <!-- Window Title Bar -->
+    <div class="title-bar print-only-hide" role="banner">
+      <div class="title-dots">
+        <div class="title-dot red"></div>
+        <div class="title-dot yellow"></div>
+        <div class="title-dot green"></div>
+      </div>
+      <div class="title-bar-text">
+        <span class="title-icon"><i class="fas fa-file-alt"></i></span>
+        resume.pdf — DevStation
+      </div>
+    </div>
+
+
+    <div class="resume-wrapper">
     <div class="resume-container">
         <!-- Header -->
         <header>
@@ -351,32 +380,10 @@
                     }
                 }, 3000);
 
-                // 2. Show Exclusive Hire Deal Banner after 10 seconds delay
-                setTimeout(() => {
-                    if (hireModalOverlay) {
-                        hireModalOverlay.classList.add('visible');
-
-                        // Start 20-second countdown & progress bar fill
-                        let remainingSeconds = 20;
-                        if (timerProgressFill) {
-                            timerProgressFill.style.transition = 'width 20s linear';
-                            timerProgressFill.style.width = '0%';
-                        }
-
-                        const countdownInterval = setInterval(() => {
-                            remainingSeconds -= 1;
-                            if (hireTimerCount && remainingSeconds >= 0) {
-                                hireTimerCount.textContent = remainingSeconds;
-                            }
-                        }, 1000);
-
-                        // Auto minimize after 20 seconds
-                        setTimeout(() => {
-                            clearInterval(countdownInterval);
-                            minimizeHireModal();
-                        }, 20000);
-                    }
-                }, 10000);
+                // Make the exclusive offer button visible immediately instead of showing the modal
+                if (hirePillTrigger) {
+                    hirePillTrigger.classList.add('visible');
+                }
             });
 
             function minimizeHireModal() {
@@ -488,6 +495,109 @@
                 document.title = `Resume_Nachiketa-${RESUME_VERSION}`;
             }
         </script>
+    </div> <!-- /resume-wrapper -->
+  </div> <!-- /ide-frame -->
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle print-only-hide" id="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <script>
+    (function () {
+      'use strict';
+      // ── Matrix Rain Background ──
+      const canvas = document.createElement('canvas');
+      canvas.id = 'matrix-rain';
+      canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;opacity:0.4;pointer-events:none;';
+      canvas.classList.add('print-only-hide');
+      document.body.insertBefore(canvas, document.body.firstChild);
+
+      const ctx = canvas.getContext('2d');
+      const codeTokens = [
+        'Widget', 'build', 'State', 'BLoC', 'class', 'extends', 'final',
+        'const', 'return', 'async', 'await', 'void', 'String', 'int',
+        'List', 'Map', 'Future', 'Stream', 'emit', 'yield', 'import',
+        'override', 'setState', 'context', 'Navigator', 'Scaffold',
+        'Column', 'Row', 'Container', 'Padding', 'Center', 'Text',
+        'Icon', 'AppBar', 'FloatingActionButton', 'GestureDetector',
+        'bloc', 'cubit', 'provider', 'dio', 'http', 'json', 'api',
+        'flutter', 'dart', 'Firebase', 'Hive', 'GetX', 'Riverpod',
+      ];
+
+      let columns = [];
+      let animFrame;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initColumns();
+      }
+
+      function initColumns() {
+        const colWidth = 120;
+        const numCols = Math.ceil(canvas.width / colWidth);
+        columns = [];
+        for (let i = 0; i < numCols; i++) {
+          columns.push({
+            x: i * colWidth + Math.random() * 40,
+            y: Math.random() * canvas.height,
+            speed: 0.15 + Math.random() * 0.25,
+            tokens: [],
+            nextToken: 0,
+          });
+          // Pre-fill tokens
+          const numTokens = 3 + Math.floor(Math.random() * 4);
+          for (let j = 0; j < numTokens; j++) {
+            columns[i].tokens.push({
+              text: codeTokens[Math.floor(Math.random() * codeTokens.length)],
+              offset: j * 28,
+              alpha: 0.04 + Math.random() * 0.06,
+            });
+          }
+        }
+      }
+
+      function drawMatrix() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = '500 11px "JetBrains Mono", monospace';
+
+        columns.forEach(col => {
+          col.tokens.forEach(token => {
+            const y = (col.y + token.offset) % (canvas.height + 100);
+            ctx.fillStyle = `rgba(199, 146, 234, ${token.alpha})`;
+            ctx.fillText(token.text, col.x, y);
+          });
+          col.y += col.speed;
+          if (col.y > canvas.height + 100) {
+            col.y = -100;
+            // Shuffle tokens
+            col.tokens.forEach(t => {
+              t.text = codeTokens[Math.floor(Math.random() * codeTokens.length)];
+              t.alpha = 0.03 + Math.random() * 0.06;
+            });
+          }
+        });
+        animFrame = requestAnimationFrame(drawMatrix);
+      }
+
+      resizeCanvas();
+      drawMatrix();
+      window.addEventListener('resize', resizeCanvas);
+
+      // ── Theme Toggle ────────────────────────────────
+      const themeToggle = document.getElementById('theme-toggle');
+      let currentTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      themeToggle.addEventListener('click', () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
+      });
+    })();
+  </script>
 </body>
 
 </html>

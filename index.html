@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./portfolio.css" />
   <!-- PostHog Analytics -->
   <script>
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="Tl Ml El Il Al init Xl tu Jl Kl nu ho Yl au Gl capture getExtension eu xl vu calculateEventProperties du register register_once register_for_session unregister unregister_for_session gu Ql cu getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync mu identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset yu shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty fu uu createPersonProfile setInternalOrTestUser pu Fl Ol opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ou debug do ts getPageViewId captureTraceFeedback captureTraceMetric zl".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="Tl Ml El Il Al init Xl tu Jl Kl nu ho Yl au Gl capture getExtension eu xl vu calculateEventProperties du register register_once register_for_session unregister unregister_for_session gu Ql cu getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync mu identify setPersonProperties unsetPersonProperties group resetGroups setGroupPropertiesForFlags resetGroupPropertiesForFlags reset yu shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty fu uu createPersonProfile setInternalOrTestUser pu Fl Ol opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ou debug do ts getPageViewId captureTraceFeedback captureTraceMetric zl".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
       posthog.init('phc_tSiyZrWo5zEC3UheeVs6ZwUGgYAwXBUZtcVRebV6uS62', {
           api_host: 'https://us.i.posthog.com',
           defaults: '2026-05-30',
@@ -33,870 +33,974 @@
 <body>
 
   <!-- ═══════════════════════════════════════════
-  NAVIGATION
+  BOOT SEQUENCE
 ═══════════════════════════════════════════ -->
-  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo" id="nav-logo">
-        <div class="logo-box">
-          <span class="logo-letter">N</span>
-          <span class="logo-code">&lt;/&gt;</span>
-          <span class="logo-glow"></span>
-        </div>
-        <div class="logo-text">Nachiketa<span>.dev</span></div>
-      </a>
-      <div class="nav-links" id="nav-links">
-        <a href="#about" class="nav-link" data-section="about">About</a>
-        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
-        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-      </div>
-      <a href="./resume.html" class="nav-cta" id="nav-resume-link" target="_blank">
-        <i class="fas fa-file-alt"></i> Resume
-      </a>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <div class="boot-overlay" id="boot-overlay">
+    <div class="boot-terminal" id="boot-terminal">
+      <div class="boot-line" id="boot-0"><span class="boot-prompt">❯</span> <span class="boot-cmd">initializing devstation...</span></div>
+      <div class="boot-line" id="boot-1"><span class="boot-ok">✓</span> loading modules <span class="boot-version">[flutter, dart, fastapi]</span></div>
+      <div class="boot-line" id="boot-2"><span class="boot-ok">✓</span> connecting to <span class="boot-path">portfolio.fluttersolution.com</span></div>
+      <div class="boot-line" id="boot-3"><span class="boot-ok">✓</span> rendering portfolio <span class="boot-version">v6.0.5</span></div>
+      <div class="boot-line" id="boot-4"><span class="boot-prompt">❯</span> <span class="boot-cmd">ready.</span> <span class="boot-cursor-block"></span></div>
     </div>
-  </nav>
-
-  <!-- Mobile nav -->
-  <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
-    <a href="#about" class="nav-link" id="mob-about">About</a>
-    <a href="#experience" class="nav-link" id="mob-exp">Experience</a>
-    <a href="#projects" class="nav-link" id="mob-proj">Projects</a>
-    <a href="#skills" class="nav-link" id="mob-skills">Skills</a>
-    <a href="#contact" class="nav-link" id="mob-contact">Contact</a>
-    <a href="./resume.html" class="nav-cta" id="mob-resume" target="_blank">
-      <i class="fas fa-file-alt"></i> Resume
-    </a>
   </div>
 
   <!-- ═══════════════════════════════════════════
-  HERO
+  DOT GRID BACKGROUND & NIGHT SKY
 ═══════════════════════════════════════════ -->
-  <section id="hero" aria-label="Hero section">
-    <div class="hero-bg"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-
-    <div class="hero-inner">
-      <!-- Left: Content -->
-      <div class="hero-content">
-        <div class="hero-greeting">Hello, World</div>
-
-        <h1 class="hero-name">
-          Nachiketa
-          <span class="name-highlight">Pandey</span>
-        </h1>
-
-        <div class="hero-typewriter-wrap">
-          <span id="hero-typewriter-text"></span><span id="hero-cursor">|</span>
-        </div>
-
-        <p class="hero-summary">
-          Senior Flutter Developer with <strong>5+ years</strong> shipping production-grade cross-platform apps
-          — from fintech account-opening platforms to AI-powered agritech tools.
-          I architect clean, scalable solutions that live at the intersection of great UX and solid engineering.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary" id="hero-view-work">
-            <i class="fas fa-rocket"></i> View My Work
-          </a>
-          <a href="#contact" class="btn-secondary" id="hero-contact">
-            <i class="fas fa-paper-plane"></i> Let's Talk
-          </a>
-          <a href="./resume.html" class="btn-ghost" id="hero-resume" target="_blank">
-            <i class="fas fa-file-alt"></i> Resume
-          </a>
-        </div>
-
-        <div class="hero-socials">
-          <a href="https://github.com/nacpa" target="_blank" class="hero-social-link" id="social-github" title="GitHub"
-            aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank" class="hero-social-link"
-            id="social-linkedin" title="LinkedIn" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:pan.nachiketa@gmail.com" class="hero-social-link" id="social-email" title="Email"
-            aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://portfolio.fluttersolution.com/" target="_blank" class="hero-social-link" id="social-blog"
-            title="Portfolio" aria-label="Portfolio">
-            <i class="fas fa-globe"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: Photo -->
-      <div class="hero-photo-wrap">
-        <div class="hero-photo-glow"></div>
-        <div class="hero-photo-ring">
-          <div class="hero-photo-inner">
-            <img src="./profile.jpeg" alt="Nachiketa Pandey — Senior Flutter Developer" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-scroll" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  <div class="dot-grid-bg" aria-hidden="true"></div>
+  <div class="night-sky" id="night-sky" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
 
   <!-- ═══════════════════════════════════════════
-  ABOUT
+  IDE FRAME
 ═══════════════════════════════════════════ -->
-  <section id="about" aria-label="About section">
-    <div class="container">
-      <div class="section-label">About Me</div>
-      <h2 class="section-headline">The Engineer <span>Behind the Code</span></h2>
+  <div class="ide-frame">
 
-      <div class="about-grid">
-        <!-- Left: Story -->
-        <div>
-          <div class="about-story">
-            <p>
-              I'm a <strong>Senior Flutter Developer</strong> based in India, currently consulting for
-              <span class="text-accent">Kotak Securities</span>, where I own end-to-end account-opening
-              workflows that serve thousands of users across web and mobile every day.
-            </p>
-            <p>
-              My journey began in telematics and payments internships, evolved through building
-              <strong>white-label B2B platforms</strong> at Bizzsetu, and culminated in architecting
-              complex fintech flows — KYC onboarding, RM-assist SDKs, joint-holder journeys,
-              and audit-grade review systems — all running on a single modular Flutter codebase.
-            </p>
-            <p>
-              Beyond client work, I independently built <a href="https://nabh.fluttersolution.com/" target="_blank"
-                rel="noopener noreferrer" class="text-secondary" style="text-decoration: underline;">Nabh AI</a>
-              — an Agentic AI Agricultural Coordination Platform, pairing a Flutter (BLoC) frontend with
-              a FastAPI backend. It utilizes a stateful LLM backbone for intelligent, conversational
-              interventions to mitigate crop stubble burning.
-            </p>
-            <p>
-              I care deeply about <strong>Clean Architecture</strong>, performance at scale, and
-              writing code that teams can maintain for years. I'm also an active technical writer
-              at <a href="https://www.fluttersolution.com" target="_blank"
-                style="color: var(--primary); text-decoration: underline;">fluttersolution.com</a>,
-              where I share rendering optimisation insights and architectural patterns.
-            </p>
-          </div>
-
-          <div class="about-stats">
-            <div class="stat-card reveal" id="stat-exp">
-              <div class="stat-number" data-count="5" data-suffix="+">0</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-card reveal reveal-delay-1" id="stat-github">
-              <div class="stat-number" data-count="700" data-suffix="+">0</div>
-              <div class="stat-label">GitHub Contributions</div>
-            </div>
-            <div class="stat-card reveal reveal-delay-2" id="stat-lc">
-              <div class="stat-number" data-count="250" data-suffix="+">0</div>
-              <div class="stat-label">LeetCode Problems</div>
-            </div>
-            <div class="stat-card reveal reveal-delay-3" id="stat-jee">
-              <div class="stat-number" data-count="96.6" data-suffix="th">0</div>
-              <div class="stat-label">JEE Percentile</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Skill Tags -->
-        <div class="about-right">
-          <div class="section-label">Tech Stack</div>
-
-          <div class="skill-group reveal" id="about-primary-skills">
-            <div class="skill-group-title">Core / Primary</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary-tag"><i class="fas fa-mobile-alt"></i> Flutter &amp; Dart</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-layer-group"></i> Clean Architecture &amp; DI</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-cubes"></i> BLoC, Provider &amp; GetX</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-network-wired"></i> RESTful APIs</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-fire"></i> Firebase</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-database"></i> Hive &amp; SQLite Storage</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal reveal-delay-1" id="about-secondary-skills">
-            <div class="skill-group-title">Secondary / Tools</div>
-            <div class="skill-tags">
-              <span class="skill-tag secondary-tag"><i class="fas fa-vial"></i> Unit, Widget &amp; Integration
-                Testing</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-credit-card"></i> Payment Gateways</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-infinity"></i> GitHub Actions &amp; Fastlane</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-robot"></i> GenAI / LLM (FastAPI)</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-bolt"></i> UI Performance</span>
-              <span class="skill-tag secondary-tag"><i class="fab fa-git-alt"></i> Git</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-tasks"></i> Agile / SDLC</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal reveal-delay-2" id="about-platforms">
-            <div class="skill-group-title">Platforms &amp; Environments</div>
-            <div class="skill-tags">
-              <span class="skill-tag primary-tag"><i class="fab fa-apple"></i> iOS</span>
-              <span class="skill-tag primary-tag"><i class="fab fa-android"></i> Android</span>
-              <span class="skill-tag primary-tag"><i class="fas fa-globe"></i> Web</span>
-              <span class="skill-tag secondary-tag"><i class="fab fa-python"></i> Python / FastAPI</span>
-              <span class="skill-tag secondary-tag"><i class="fas fa-brain"></i> Gemini Vision</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal reveal-delay-3" id="about-edu">
-            <div class="skill-group-title">Education</div>
-            <div
-              style="padding: 18px 20px; background: var(--surface-low); border: 1px solid var(--outline-variant); border-radius: var(--radius-md);">
-              <div
-                style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--on-surface); margin-bottom: 4px;">
-                B.Tech — Computer Science &amp; Engineering</div>
-              <div style="font-size: 0.82rem; color: var(--primary); margin-bottom: 3px;">Gurukul Kangri
-                Vishwavidyalaya, Uttarakhand</div>
-              <div style="font-family: var(--font-mono); font-size: 0.73rem; color: var(--outline);">SGPA: 8.3 / 10.00
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Window Title Bar -->
+    <div class="title-bar" role="banner">
+      <div class="title-dots">
+        <div class="title-dot red"></div>
+        <div class="title-dot yellow"></div>
+        <div class="title-dot green"></div>
+      </div>
+      <div class="title-bar-text">
+        <span class="title-icon"><i class="fas fa-code"></i></span>
+        nachiketa.dev — DevStation
       </div>
     </div>
-  </section>
 
-  <!-- ═══════════════════════════════════════════
-  EXPERIENCE
-═══════════════════════════════════════════ -->
-  <section id="experience" aria-label="Work experience section">
-    <div class="container">
-      <div class="section-label">Career</div>
-      <h2 class="section-headline">Where I've <span>Built Things</span></h2>
-
-      <div class="timeline" id="experience-timeline">
-
-        <!-- Kotak -->
-        <div class="timeline-item current reveal" id="exp-kotak">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-company">Kotak Securities <span
-                    style="font-size:0.85rem; font-weight:400; color:var(--on-muted)">(Kotak Neo)</span></div>
-                <div class="timeline-role">Flutter Developer — Consultant</div>
-              </div>
-              <div class="timeline-badge current-badge">
-                <i class="fas fa-circle" style="font-size:0.5rem;"></i> May 2024 — Present
-              </div>
-            </div>
-            <div class="timeline-bullets">
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Own and build <strong>secure, modular account-opening workflows</strong> in
-                  Flutter across web and mobile — including a self-serve DIY onboarding flow and an RM-assist SDK
-                  supporting both RM-led and remote applicant journeys.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Built and integrated the <strong>iOS/Android SDK setup and embedding
-                    flow</strong>, enabling the account-opening journey to be plugged into multiple host applications,
-                  handling complex branching journeys across varying document sets and eligibility paths.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Designed <strong>joint-holder onboarding</strong> across both flows —
-                  managing concurrent multi-user state, cross-applicant data validation, and synchronized approval steps
-                  between primary and joint holders.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Built the <strong>application review and approval system</strong> for
-                  internal reviewers — supporting multiple concurrent logins with role-based access, session isolation,
-                  and audit-consistent case handling.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Integrated all workflows with <strong>core banking REST APIs and
-                    microservices</strong>, handling authentication, encryption, and session management under strict
-                  regulatory compliance requirements.</div>
-              </div>
-            </div>
+    <!-- ═══════════════════════════════════════════
+    TAB NAVIGATION
+  ═══════════════════════════════════════════ -->
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" id="nav-logo">
+          <div class="logo-box">
+            <span class="logo-letter">N</span>
+            <span class="logo-code">&lt;/&gt;</span>
+            <span class="logo-glow"></span>
           </div>
+          <div class="logo-text">Nachiketa<span>.dev</span></div>
+        </a>
+        <div class="nav-links" id="nav-links">
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="fab fa-dart-lang tab-icon" style="color: var(--accent-secondary);"></i>
+            About.dart
+          </a>
+          <a href="#experience" class="nav-link" data-section="experience">
+            <i class="fab fa-git-alt tab-icon" style="color: var(--accent-error);"></i>
+            Experience.log
+          </a>
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="fas fa-cube tab-icon" style="color: var(--accent-warning);"></i>
+            Projects.dart
+          </a>
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="fas fa-file-code tab-icon" style="color: var(--accent-success);"></i>
+            pubspec.yaml
+          </a>
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="fas fa-terminal tab-icon" style="color: var(--accent);"></i>
+            contact.sh
+          </a>
         </div>
-
-        <!-- Bizzsetu -->
-        <div class="timeline-item reveal reveal-delay-1" id="exp-bizzsetu">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-company">Bizzsetu</div>
-                <div class="timeline-role">Flutter Developer</div>
-              </div>
-              <div class="timeline-badge">Feb 2023 — May 2024</div>
-            </div>
-            <div class="timeline-bullets">
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Built <strong>scalable cross-platform software</strong> targeting iOS,
-                  Android, and Web via Flutter, with seamless CI/CD deployments to production.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Engineered <strong>modular white-label infrastructure</strong>, enabling
-                  rapid B2B client onboarding by decoupling brand-specific theming from core application logic.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Profiled and reduced unnecessary widget rebuilds across high-traffic
-                  screens, improving <strong>frame stability and perceived UI responsiveness</strong> across devices.
-                </div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Collaborated closely with product and design teams to translate wireframes
-                  into <strong>pixel-perfect, production-ready Flutter screens</strong> across multiple client apps.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SWA Softech -->
-        <div class="timeline-item reveal reveal-delay-2" id="exp-swa">
-          <div class="timeline-dot"></div>
-          <div class="glass-card timeline-card">
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-company">SWA Softech Pvt. Ltd.</div>
-                <div class="timeline-role">Flutter Developer</div>
-              </div>
-              <div class="timeline-badge">March 2022 — Feb 2023</div>
-            </div>
-            <div class="timeline-bullets">
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Engineered robust <strong>motorcycle telematics software</strong>,
-                  integrating physical GPS pipelines and crash-detection algorithms for high-fidelity real-time route
-                  tracing.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Built <strong>live ride-monitoring dashboards</strong> in Flutter,
-                  visualizing speed, location, and trip history with real-time backend data sync.</div>
-              </div>
-              <div class="timeline-bullet">
-                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-                <div class="bullet-content">Implemented <strong>crash-event detection logic</strong> using sensor data
-                  thresholds, triggering automated alert flows for emergency response.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <a href="./resume.html" class="nav-cta" id="nav-resume-link" target="_blank">
+          <i class="fas fa-play"></i> Run Resume
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+      <a href="#about" class="nav-link" id="mob-about"><i class="fab fa-dart-lang tab-icon"></i> About.dart</a>
+      <a href="#experience" class="nav-link" id="mob-exp"><i class="fab fa-git-alt tab-icon"></i> Experience.log</a>
+      <a href="#projects" class="nav-link" id="mob-proj"><i class="fas fa-cube tab-icon"></i> Projects.dart</a>
+      <a href="#skills" class="nav-link" id="mob-skills"><i class="fas fa-file-code tab-icon"></i> pubspec.yaml</a>
+      <a href="#contact" class="nav-link" id="mob-contact"><i class="fas fa-terminal tab-icon"></i> contact.sh</a>
+      <a href="./resume.html" class="nav-cta" id="mob-resume" target="_blank">
+        <i class="fas fa-play"></i> Run Resume
+      </a>
     </div>
-  </section>
 
-  <!-- ═══════════════════════════════════════════
-  PROJECTS
-═══════════════════════════════════════════ -->
-  <section id="projects" aria-label="Projects section">
-    <div class="container">
-      <div class="section-label">Projects</div>
-      <h2 class="section-headline">Things I've <span>Built &amp; Shipped</span></h2>
+    <!-- ═══════════════════════════════════════════
+    HERO
+  ═══════════════════════════════════════════ -->
+    <section id="hero" aria-label="Hero section">
+      <div class="hero-bg"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
 
-      <!-- Featured: Nabh -->
-      <div class="project-featured-card reveal" id="project-nabh">
-        <div class="project-featured-visual">
-          <div class="project-visual-tags">
-            <span class="chip">Flutter</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">GenUI</span>
-            <span class="chip">Agritech</span>
-          </div>
-          <div class="project-visual-icon">🌾</div>
-          <div class="project-visual-label">Agentic AI · Agritech · Live</div>
-        </div>
+      <div class="hero-inner">
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <div class="hero-greeting">Hello, World</div>
 
-        <div class="project-featured-info">
-          <div class="project-eyebrow">Featured Personal Project</div>
-          <h3 class="project-title"><a href="https://nabh.fluttersolution.com/" target="_blank"
-              rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Nabh AI <i
-                class="fas fa-external-link-alt" style="font-size: 0.6em; margin-left: 6px; opacity: 0.8;"></i></a></h3>
-          <div class="project-subtitle">Agentic AI Agricultural Coordination Platform</div>
+          <h1 class="hero-name">
+            Nachiketa
+            <span class="name-highlight">Pandey</span>
+          </h1>
 
-          <div class="project-bullets">
-            <div class="project-bullet">
-              <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-              <div class="bullet-content"><strong>Agentic AI Architecture:</strong> Engineered a <strong>Stateful
-                  Conversational Agent</strong> using a powerful LLM backbone to act as an autonomous agritech
-                consultant, designed to intelligently mitigate agricultural stubble burning.</div>
-            </div>
-            <div class="project-bullet">
-              <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-              <div class="bullet-content"><strong>GenUI (Generative UI) Innovation:</strong> Pioneered a GenUI
-                architecture where the LLM utilizes <strong>Function Calling</strong> to dynamically generate and stream
-                Agentic UI components—such as real-time, interactive <strong>flutter_map hotspot
-                  overlays</strong>—directly into the chat interface based on parsed user intent.</div>
-            </div>
-            <div class="project-bullet">
-              <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-              <div class="bullet-content"><strong>Dynamic Context Injection:</strong> Orchestrated real-time prompt
-                engineering by feeding live environmental data (via Open-Meteo API) and calculated financial subsidy
-                metrics directly into the LLM’s system prompts to generate highly contextualized, persuasive, and
-                localized messaging.</div>
-            </div>
-            <div class="project-bullet">
-              <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-              <div class="bullet-content"><strong>Context Window Management:</strong> Implemented robust memory handling
-                on a <strong>FastAPI backend</strong>. Built systems to dynamically summarize and truncate chat history,
-                effectively optimizing token limits while retaining crucial user context (e.g., location, crop type,
-                acreage) across multi-turn sessions.</div>
-            </div>
-            <div class="project-bullet">
-              <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
-              <div class="bullet-content"><strong>High-Performance Infrastructure:</strong> Built the <strong>Flutter
-                  (BLoC)</strong> frontend integration using Dio for low-latency streaming of the LLM's multimodal
-                responses, fortified by comprehensive <strong>CI/CD pipelines</strong> for automated, reliable
-                deployments.</div>
-            </div>
+          <div class="hero-typewriter-wrap">
+            <span id="hero-typewriter-text"></span><span id="hero-cursor">▋</span>
           </div>
 
-          <div class="project-tags">
-            <span class="chip primary-chip">Agentic AI</span>
-            <span class="chip primary-chip">LLMs</span>
-            <span class="chip">GenUI</span>
-            <span class="chip">Prompt Engineering</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">Flutter (BLoC)</span>
-            <span class="chip">CI/CD</span>
-          </div>
-
-          <div class="project-status">
-            <span class="status-dot"></span>
-            Currently live &amp; active
-          </div>
-        </div>
-      </div>
-
-      <!-- Internships section -->
-      <div class="internships-section-title reveal" id="internships-heading">Early Work</div>
-      <div class="internships-grid">
-
-        <div class="glass-card intern-card reveal" id="intern-uipro">
-          <div class="intern-company">UIPRO Corp Pvt. Ltd</div>
-          <div class="intern-role">Flutter Developer Intern</div>
-          <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Dec 2021 –
-            Feb 2022</div>
-          <div class="intern-desc">Developed the SpeedGet Driver interface — integrating live geospatial tracking with
-            Razorpay payment gateways for instant, secure transactions.</div>
-        </div>
-
-        <div class="glass-card intern-card reveal reveal-delay-1" id="intern-mmmapp">
-          <div class="intern-company">MMMApp</div>
-          <div class="intern-role">Flutter Developer Intern</div>
-          <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Sep 2021 –
-            Nov 2021</div>
-          <div class="intern-desc">Engineered core frontend application modules, building and integrating key features
-            within the main app codebase.</div>
-        </div>
-
-        <div class="glass-card intern-card reveal reveal-delay-2" id="intern-webphiser">
-          <div class="intern-company">Webphiser Technology</div>
-          <div class="intern-role">Flutter Developer Intern</div>
-          <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Jun 2021 –
-            Aug 2021</div>
-          <div class="intern-desc">Implemented high-conversion payment and financial charting UI components,
-            contributing to core product flows.</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-  SKILLS
-═══════════════════════════════════════════ -->
-  <section id="skills" aria-label="Skills section">
-    <div class="container">
-      <div class="section-label">Expertise</div>
-      <h2 class="section-headline">What I <span>Work With</span></h2>
-
-      <p class="skills-intro reveal" id="skills-intro">
-        A blend of mobile craftsmanship and backend capability — I specialise in building Flutter apps that
-        feel native, perform at scale, and integrate cleanly with complex backend systems.
-      </p>
-
-      <div class="skills-grid">
-
-        <div class="glass-card skill-category-card reveal" id="skills-flutter">
-          <div class="skill-cat-header">
-            <div class="skill-cat-icon blue"><i class="fas fa-mobile-alt"></i></div>
-            <div>
-              <div class="skill-cat-name">Flutter &amp; Mobile</div>
-              <div class="skill-cat-sub">Primary expertise</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Flutter &amp; Dart</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 96%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">BLoC State Management</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 94%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Provider</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Clean Architecture</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">UI Performance Tuning</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 90%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="glass-card skill-category-card reveal reveal-delay-1" id="skills-backend">
-          <div class="skill-cat-header">
-            <div class="skill-cat-icon cyan"><i class="fas fa-server"></i></div>
-            <div>
-              <div class="skill-cat-name">Backend &amp; APIs</div>
-              <div class="skill-cat-sub">Integration &amp; full-stack</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">RESTful API Integration</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 94%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">FastAPI / Python</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 82%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Firebase</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 85%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Auth &amp; Encryption</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">GenAI / LLM Integration</span>
-                <span class="skill-item-pct">Proficient</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 78%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="glass-card skill-category-card reveal reveal-delay-2" id="skills-fintech">
-          <div class="skill-cat-header">
-            <div class="skill-cat-icon pink"><i class="fas fa-landmark"></i></div>
-            <div>
-              <div class="skill-cat-name">Fintech Domain</div>
-              <div class="skill-cat-sub">KYC · Payments · Compliance</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">KYC / Onboarding Flows</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Payment Gateway Integration</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 87%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">SDK Architecture</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">White-label Systems</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 90%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="glass-card skill-category-card reveal reveal-delay-3" id="skills-devops">
-          <div class="skill-cat-header">
-            <div class="skill-cat-icon gray"><i class="fas fa-cog"></i></div>
-            <div>
-              <div class="skill-cat-name">DevOps &amp; Tools</div>
-              <div class="skill-cat-sub">Delivery &amp; workflow</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Git / Version Control</span>
-                <span class="skill-item-pct">Expert</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 95%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">CI/CD Pipelines</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill-item-row">
-              <div class="skill-item-label">
-                <span class="skill-item-name">Agile / Scrum</span>
-                <span class="skill-item-pct">Advanced</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="--fill-width: 85%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Achievements -->
-      <div class="achievements-row">
-        <div class="achievement-card reveal" id="ach-github">
-          <span class="achievement-icon">🐙</span>
-          <div class="achievement-value">700+</div>
-          <div class="achievement-label">GitHub<br>Contributions</div>
-        </div>
-        <div class="achievement-card reveal reveal-delay-1" id="ach-lc">
-          <span class="achievement-icon">⚡</span>
-          <div class="achievement-value">250+</div>
-          <div class="achievement-label">LeetCode<br>Challenges</div>
-        </div>
-        <div class="achievement-card reveal reveal-delay-2" id="ach-jee">
-          <span class="achievement-icon">🎯</span>
-          <div class="achievement-value">96.6<sup style="font-size:0.55em;">th</sup></div>
-          <div class="achievement-label">JEE<br>Percentile</div>
-        </div>
-        <div class="achievement-card reveal reveal-delay-3" id="ach-blog">
-          <span class="achievement-icon">✍️</span>
-          <div class="achievement-value"><span style="font-size:1.2rem;">Blog</span></div>
-          <div class="achievement-label">Flutter Technical<br>Writer</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-  CONTACT
-═══════════════════════════════════════════ -->
-  <section id="contact" aria-label="Contact section">
-    <div class="container">
-      <div class="section-label">Get In Touch</div>
-      <h2 class="section-headline">Let's Build <span>Something Great</span></h2>
-
-      <div class="contact-grid">
-        <!-- Left: Links -->
-        <div>
-          <p class="contact-intro reveal" id="contact-intro">
-            I'm open to <strong>senior Flutter / cross-platform roles</strong>, exciting consulting opportunities,
-            or just a great conversation about fintech engineering, clean architecture, or AI products.
-            Reach out — I usually respond within 24 hours.
+          <p class="hero-summary">
+            Senior Flutter Developer with <strong>5+ years</strong> shipping production-grade cross-platform apps
+            — from fintech account-opening platforms to AI-powered agritech tools.
+            I architect clean, scalable solutions that live at the intersection of great UX and solid engineering.
           </p>
 
-          <div class="contact-links reveal reveal-delay-1" id="contact-links">
-            <a href="mailto:pan.nachiketa@gmail.com" class="contact-link-item" id="contact-email">
-              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-link-info">
-                <div class="contact-link-label">Email</div>
-                <div class="contact-link-value">pan.nachiketa@gmail.com</div>
-              </div>
-              <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.75rem; color:var(--outline);"></i>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary" id="hero-view-work">
+              <i class="fas fa-rocket"></i> View My Work
             </a>
-
-            <a href="callto:+917523893279" class="contact-link-item" id="contact-phone">
-              <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-link-info">
-                <div class="contact-link-label">Phone</div>
-                <div class="contact-link-value">+91 7523 893 279</div>
-              </div>
-              <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.75rem; color:var(--outline);"></i>
+            <a href="#contact" class="btn-secondary" id="hero-contact">
+              <i class="fas fa-paper-plane"></i> Let's Talk
             </a>
-
-            <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank" class="contact-link-item"
-              id="contact-linkedin">
-              <div class="contact-link-icon" style="background: rgba(10,102,194,0.15); color: #0a66c2;"><i
-                  class="fab fa-linkedin-in"></i></div>
-              <div class="contact-link-info">
-                <div class="contact-link-label">LinkedIn</div>
-                <div class="contact-link-value">@nachiketapandey</div>
-              </div>
-              <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.75rem; color:var(--outline);"></i>
+            <a href="./resume.html" class="btn-ghost" id="hero-resume" target="_blank">
+              <i class="fas fa-file-alt"></i> Resume
             </a>
+          </div>
 
-            <a href="https://github.com/nacpa" target="_blank" class="contact-link-item" id="contact-github">
-              <div class="contact-link-icon" style="background: rgba(255,255,255,0.06); color: var(--on-surface);"><i
-                  class="fab fa-github"></i></div>
-              <div class="contact-link-info">
-                <div class="contact-link-label">GitHub</div>
-                <div class="contact-link-value">@nacpa</div>
-              </div>
-              <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.75rem; color:var(--outline);"></i>
+          <div class="hero-socials">
+            <a href="https://github.com/nacpa" target="_blank" class="hero-social-link" id="social-github" title="GitHub"
+              aria-label="GitHub">
+              <i class="fab fa-github"></i>
             </a>
-
-            <a href="https://www.fluttersolution.com/" target="_blank" class="contact-link-item" id="contact-blog">
-              <div class="contact-link-icon" style="background: rgba(129,140,248,0.12); color: var(--primary);"><i
-                  class="fas fa-pen-nib"></i></div>
-              <div class="contact-link-info">
-                <div class="contact-link-label">Flutter Blog</div>
-                <div class="contact-link-value">fluttersolution.com</div>
-              </div>
-              <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.75rem; color:var(--outline);"></i>
+            <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank" class="hero-social-link"
+              id="social-linkedin" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:pan.nachiketa@gmail.com" class="hero-social-link" id="social-email" title="Email"
+              aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://portfolio.fluttersolution.com/" target="_blank" class="hero-social-link" id="social-blog"
+              title="Portfolio" aria-label="Portfolio">
+              <i class="fas fa-globe"></i>
             </a>
           </div>
         </div>
 
-        <!-- Right: Hire Card -->
-        <div>
-          <div class="glass-card hire-card reveal reveal-delay-2" id="hire-card">
-            <div class="hire-badge-pill">
-              <i class="fas fa-bolt"></i> Available for Opportunities
+        <!-- Right: Photo -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-ring">
+            <div class="hero-photo-inner">
+              <img src="./profile.jpeg" alt="Nachiketa Pandey — Senior Flutter Developer" />
             </div>
-            <h3 class="hire-card-title">Senior Flutter &amp; Fintech Developer</h3>
-            <p class="hire-card-sub">
-              Looking for a developer who can own complex cross-platform products from architecture to deployment?
-              With 5+ years of fintech experience and full-stack capability, I bring both depth and breadth.
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+    ABOUT
+  ═══════════════════════════════════════════ -->
+    <section id="about" aria-label="About section">
+      <div class="container">
+        <div class="section-label">About Me</div>
+        <h2 class="section-headline">The Engineer <span>Behind the Code</span></h2>
+
+        <div class="about-grid">
+          <!-- Left: Story -->
+          <div>
+            <div class="about-story">
+              <p>
+                I'm a <strong>Senior Flutter Developer</strong> based in India, currently consulting for
+                <span class="text-accent">Kotak Securities</span>, where I own end-to-end account-opening
+                workflows that serve thousands of users across web and mobile every day.
+              </p>
+              <p>
+                My journey began in telematics and payments internships, evolved through building
+                <strong>white-label B2B platforms</strong> at Bizzsetu, and culminated in architecting
+                complex fintech flows — KYC onboarding, RM-assist SDKs, joint-holder journeys,
+                and audit-grade review systems — all running on a single modular Flutter codebase.
+              </p>
+              <p>
+                Beyond client work, I independently built <a href="https://nabh.fluttersolution.com/" target="_blank"
+                  rel="noopener noreferrer" class="text-secondary" style="text-decoration: underline;">Nabh AI</a>
+                — an Agentic AI Agricultural Coordination Platform, pairing a Flutter (BLoC) frontend with
+                a FastAPI backend. It utilizes a stateful LLM backbone for intelligent, conversational
+                interventions to mitigate crop stubble burning.
+              </p>
+              <p>
+                I care deeply about <strong>Clean Architecture</strong>, performance at scale, and
+                writing code that teams can maintain for years. I'm also an active technical writer
+                at <a href="https://www.fluttersolution.com" target="_blank"
+                  style="color: var(--accent); text-decoration: underline;">fluttersolution.com</a>,
+                where I share rendering optimisation insights and architectural patterns.
+              </p>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-card reveal" id="stat-exp">
+                <div class="stat-number" data-count="5" data-suffix="+">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-1" id="stat-github">
+                <div class="stat-number" data-count="700" data-suffix="+">0</div>
+                <div class="stat-label">GitHub Contributions</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-2" id="stat-lc">
+                <div class="stat-number" data-count="250" data-suffix="+">0</div>
+                <div class="stat-label">LeetCode Problems</div>
+              </div>
+              <div class="stat-card reveal reveal-delay-3" id="stat-jee">
+                <div class="stat-number" data-count="96.6" data-suffix="th">0</div>
+                <div class="stat-label">JEE Percentile</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Skill Tags -->
+          <div class="about-right">
+            <div class="section-label">Tech Stack</div>
+
+            <div class="skill-group reveal" id="about-primary-skills">
+              <div class="skill-group-title">Core / Primary</div>
+              <div class="skill-tags">
+                <span class="skill-tag primary-tag"><i class="fas fa-mobile-alt"></i> Flutter &amp; Dart</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-layer-group"></i> Clean Architecture &amp; DI</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-cubes"></i> BLoC, Provider &amp; GetX</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-network-wired"></i> RESTful APIs</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-fire"></i> Firebase</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-database"></i> Hive &amp; SQLite Storage</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal reveal-delay-1" id="about-secondary-skills">
+              <div class="skill-group-title">Secondary / Tools</div>
+              <div class="skill-tags">
+                <span class="skill-tag secondary-tag"><i class="fas fa-vial"></i> Unit, Widget &amp; Integration
+                  Testing</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-credit-card"></i> Payment Gateways</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-infinity"></i> GitHub Actions &amp; Fastlane</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-robot"></i> GenAI / LLM (FastAPI)</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-bolt"></i> UI Performance</span>
+                <span class="skill-tag secondary-tag"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-tasks"></i> Agile / SDLC</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal reveal-delay-2" id="about-platforms">
+              <div class="skill-group-title">Platforms &amp; Environments</div>
+              <div class="skill-tags">
+                <span class="skill-tag primary-tag"><i class="fab fa-apple"></i> iOS</span>
+                <span class="skill-tag primary-tag"><i class="fab fa-android"></i> Android</span>
+                <span class="skill-tag primary-tag"><i class="fas fa-globe"></i> Web</span>
+                <span class="skill-tag secondary-tag"><i class="fab fa-python"></i> Python / FastAPI</span>
+                <span class="skill-tag secondary-tag"><i class="fas fa-brain"></i> Gemini Vision</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal reveal-delay-3" id="about-edu">
+              <div class="skill-group-title">Education</div>
+              <div
+                style="padding: 16px 18px; background: var(--bg-surface); border: 1px solid var(--chrome-border); border-radius: var(--radius-md);">
+                <div
+                  style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--fg); margin-bottom: 3px;">
+                  B.Tech — Computer Science &amp; Engineering</div>
+                <div style="font-size: 0.8rem; color: var(--accent); margin-bottom: 3px;">Gurukul Kangri
+                  Vishwavidyalaya, Uttarakhand</div>
+                <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--fg-faint);">SGPA: 8.3 / 10.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+    EXPERIENCE — GIT LOG STYLE
+  ═══════════════════════════════════════════ -->
+    <section id="experience" aria-label="Work experience section">
+      <div class="container">
+        <div class="section-label">Career</div>
+        <h2 class="section-headline">Where I've <span>Built Things</span></h2>
+
+        <div class="timeline" id="experience-timeline">
+
+          <!-- Kotak -->
+          <div class="timeline-item current reveal" id="exp-kotak">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">Kotak Securities <span
+                      style="font-size:0.82rem; font-weight:400; color:var(--fg-dim)">(Kotak Neo)</span></div>
+                  <div class="timeline-role">Flutter Developer — Consultant</div>
+                </div>
+                <div class="timeline-badge current-badge">
+                  <i class="fas fa-circle" style="font-size:0.45rem;"></i> May 2024 — Present
+                </div>
+              </div>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Own and build <strong>secure, modular account-opening workflows</strong> in
+                    Flutter across web and mobile — including a self-serve DIY onboarding flow and an RM-assist SDK
+                    supporting both RM-led and remote applicant journeys.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Built and integrated the <strong>iOS/Android SDK setup and embedding
+                      flow</strong>, enabling the account-opening journey to be plugged into multiple host applications,
+                    handling complex branching journeys across varying document sets and eligibility paths.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Designed <strong>joint-holder onboarding</strong> across both flows —
+                    managing concurrent multi-user state, cross-applicant data validation, and synchronized approval steps
+                    between primary and joint holders.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Built the <strong>application review and approval system</strong> for
+                    internal reviewers — supporting multiple concurrent logins with role-based access, session isolation,
+                    and audit-consistent case handling.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Integrated all workflows with <strong>core banking REST APIs and
+                      microservices</strong>, handling authentication, encryption, and session management under strict
+                    regulatory compliance requirements.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bizzsetu -->
+          <div class="timeline-item reveal reveal-delay-1" id="exp-bizzsetu">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">Bizzsetu</div>
+                  <div class="timeline-role">Flutter Developer</div>
+                </div>
+                <div class="timeline-badge">Feb 2023 — May 2024</div>
+              </div>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Built <strong>scalable cross-platform software</strong> targeting iOS,
+                    Android, and Web via Flutter, with seamless CI/CD deployments to production.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Engineered <strong>modular white-label infrastructure</strong>, enabling
+                    rapid B2B client onboarding by decoupling brand-specific theming from core application logic.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Profiled and reduced unnecessary widget rebuilds across high-traffic
+                    screens, improving <strong>frame stability and perceived UI responsiveness</strong> across devices.
+                  </div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Collaborated closely with product and design teams to translate wireframes
+                    into <strong>pixel-perfect, production-ready Flutter screens</strong> across multiple client apps.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SWA Softech -->
+          <div class="timeline-item reveal reveal-delay-2" id="exp-swa">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">SWA Softech Pvt. Ltd.</div>
+                  <div class="timeline-role">Flutter Developer</div>
+                </div>
+                <div class="timeline-badge">March 2022 — Feb 2023</div>
+              </div>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Engineered robust <strong>motorcycle telematics software</strong>,
+                    integrating physical GPS pipelines and crash-detection algorithms for high-fidelity real-time route
+                    tracing.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Built <strong>live ride-monitoring dashboards</strong> in Flutter,
+                    visualizing speed, location, and trip history with real-time backend data sync.</div>
+                </div>
+                <div class="timeline-bullet">
+                  <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                  <div class="bullet-content">Implemented <strong>crash-event detection logic</strong> using sensor data
+                    thresholds, triggering automated alert flows for emergency response.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+    PROJECTS
+  ═══════════════════════════════════════════ -->
+    <section id="projects" aria-label="Projects section">
+      <div class="container">
+        <div class="section-label">Projects</div>
+        <h2 class="section-headline">Things I've <span>Built &amp; Shipped</span></h2>
+
+        <!-- Featured: Nabh -->
+        <div class="project-featured-card reveal" id="project-nabh">
+          <div class="project-featured-visual">
+            <canvas id="nabh-canvas" class="nabh-visual-canvas"></canvas>
+            <div class="project-visual-tags">
+              <span class="chip">Flutter</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">GenUI</span>
+              <span class="chip">Agritech</span>
+            </div>
+            <div class="project-visual-icon">🌾</div>
+            <div class="project-visual-label">Agentic AI · Agritech · Live</div>
+          </div>
+
+          <div class="project-featured-info">
+            <div class="project-eyebrow">Featured Personal Project</div>
+            <h3 class="project-title"><a href="https://nabh.fluttersolution.com/" target="_blank"
+                rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Nabh AI <i
+                  class="fas fa-external-link-alt" style="font-size: 0.6em; margin-left: 6px; opacity: 0.8;"></i></a></h3>
+            <div class="project-subtitle">Agentic AI Agricultural Coordination Platform</div>
+
+            <div class="project-bullets">
+              <div class="project-bullet">
+                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="bullet-content"><strong>Agentic AI Architecture:</strong> Engineered a <strong>Stateful
+                    Conversational Agent</strong> using a powerful LLM backbone to act as an autonomous agritech
+                  consultant, designed to intelligently mitigate agricultural stubble burning.</div>
+              </div>
+              <div class="project-bullet">
+                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="bullet-content"><strong>GenUI (Generative UI) Innovation:</strong> Pioneered a GenUI
+                  architecture where the LLM utilizes <strong>Function Calling</strong> to dynamically generate and stream
+                  Agentic UI components—such as real-time, interactive <strong>flutter_map hotspot
+                    overlays</strong>—directly into the chat interface based on parsed user intent.</div>
+              </div>
+              <div class="project-bullet">
+                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="bullet-content"><strong>Dynamic Context Injection:</strong> Orchestrated real-time prompt
+                  engineering by feeding live environmental data (via Open-Meteo API) and calculated financial subsidy
+                  metrics directly into the LLM's system prompts to generate highly contextualized, persuasive, and
+                  localized messaging.</div>
+              </div>
+              <div class="project-bullet">
+                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="bullet-content"><strong>Context Window Management:</strong> Implemented robust memory handling
+                  on a <strong>FastAPI backend</strong>. Built systems to dynamically summarize and truncate chat history,
+                  effectively optimizing token limits while retaining crucial user context (e.g., location, crop type,
+                  acreage) across multi-turn sessions.</div>
+              </div>
+              <div class="project-bullet">
+                <div class="bullet-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="bullet-content"><strong>High-Performance Infrastructure:</strong> Built the <strong>Flutter
+                    (BLoC)</strong> frontend integration using Dio for low-latency streaming of the LLM's multimodal
+                  responses, fortified by comprehensive <strong>CI/CD pipelines</strong> for automated, reliable
+                  deployments.</div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="chip primary-chip">Agentic AI</span>
+              <span class="chip primary-chip">LLMs</span>
+              <span class="chip">GenUI</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Flutter (BLoC)</span>
+              <span class="chip">CI/CD</span>
+            </div>
+
+            <div class="project-status">
+              <span class="status-dot"></span>
+              Currently live &amp; active
+            </div>
+          </div>
+        </div>
+
+        <!-- Internships section -->
+        <div class="internships-section-title reveal" id="internships-heading">Early Work</div>
+        <div class="internships-grid">
+
+          <div class="glass-card intern-card reveal" id="intern-uipro">
+            <div class="intern-company">UIPRO Corp Pvt. Ltd</div>
+            <div class="intern-role">Flutter Developer Intern</div>
+            <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Dec 2021 –
+              Feb 2022</div>
+            <div class="intern-desc">Developed the SpeedGet Driver interface — integrating live geospatial tracking with
+              Razorpay payment gateways for instant, secure transactions.</div>
+          </div>
+
+          <div class="glass-card intern-card reveal reveal-delay-1" id="intern-mmmapp">
+            <div class="intern-company">MMMApp</div>
+            <div class="intern-role">Flutter Developer Intern</div>
+            <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Sep 2021 –
+              Nov 2021</div>
+            <div class="intern-desc">Engineered core frontend application modules, building and integrating key features
+              within the main app codebase.</div>
+          </div>
+
+          <div class="glass-card intern-card reveal reveal-delay-2" id="intern-webphiser">
+            <div class="intern-company">Webphiser Technology</div>
+            <div class="intern-role">Flutter Developer Intern</div>
+            <div class="intern-period"><i class="fas fa-calendar-alt" style="margin-right:5px;opacity:0.5;"></i>Jun 2021 –
+              Aug 2021</div>
+            <div class="intern-desc">Implemented high-conversion payment and financial charting UI components,
+              contributing to core product flows.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+    SKILLS
+  ═══════════════════════════════════════════ -->
+    <section id="skills" aria-label="Skills section">
+      <div class="container">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-headline">What I <span>Work With</span></h2>
+
+        <p class="skills-intro reveal" id="skills-intro">
+          A blend of mobile craftsmanship and backend capability — I specialise in building Flutter apps that
+          feel native, perform at scale, and integrate cleanly with complex backend systems.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="glass-card skill-category-card reveal" id="skills-flutter">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon blue"><i class="fas fa-mobile-alt"></i></div>
+              <div>
+                <div class="skill-cat-name">Flutter &amp; Mobile</div>
+                <div class="skill-cat-sub">Primary expertise</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Flutter &amp; Dart</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 96%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">BLoC State Management</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Provider</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Clean Architecture</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">UI Performance Tuning</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category-card reveal reveal-delay-1" id="skills-backend">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cyan"><i class="fas fa-server"></i></div>
+              <div>
+                <div class="skill-cat-name">Backend &amp; APIs</div>
+                <div class="skill-cat-sub">Integration &amp; full-stack</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">RESTful API Integration</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">FastAPI / Python</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Firebase</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Auth &amp; Encryption</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">GenAI / LLM Integration</span>
+                  <span class="skill-item-pct">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category-card reveal reveal-delay-2" id="skills-fintech">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon pink"><i class="fas fa-landmark"></i></div>
+              <div>
+                <div class="skill-cat-name">Fintech Domain</div>
+                <div class="skill-cat-sub">KYC · Payments · Compliance</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">KYC / Onboarding Flows</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Payment Gateway Integration</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 87%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">SDK Architecture</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">White-label Systems</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category-card reveal reveal-delay-3" id="skills-devops">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon gray"><i class="fas fa-cog"></i></div>
+              <div>
+                <div class="skill-cat-name">DevOps &amp; Tools</div>
+                <div class="skill-cat-sub">Delivery &amp; workflow</div>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Git / Version Control</span>
+                  <span class="skill-item-pct">Expert</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">CI/CD Pipelines</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-label">
+                  <span class="skill-item-name">Agile / Scrum</span>
+                  <span class="skill-item-pct">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--fill-width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements-row">
+          <div class="achievement-card reveal" id="ach-github">
+            <span class="achievement-icon">🐙</span>
+            <div class="achievement-value">700+</div>
+            <div class="achievement-label">GitHub<br>Contributions</div>
+          </div>
+          <div class="achievement-card reveal reveal-delay-1" id="ach-lc">
+            <span class="achievement-icon">⚡</span>
+            <div class="achievement-value">250+</div>
+            <div class="achievement-label">LeetCode<br>Challenges</div>
+          </div>
+          <div class="achievement-card reveal reveal-delay-2" id="ach-jee">
+            <span class="achievement-icon">🎯</span>
+            <div class="achievement-value">96.6<sup style="font-size:0.55em;">th</sup></div>
+            <div class="achievement-label">JEE<br>Percentile</div>
+          </div>
+          <div class="achievement-card reveal reveal-delay-3" id="ach-blog">
+            <span class="achievement-icon">✍️</span>
+            <div class="achievement-value"><span style="font-size:1.2rem;">Blog</span></div>
+            <div class="achievement-label">Flutter Technical<br>Writer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+    CONTACT — TERMINAL STYLE
+  ═══════════════════════════════════════════ -->
+    <section id="contact" aria-label="Contact section">
+      <div class="container">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-headline">Let's Build <span>Something Great</span></h2>
+
+        <div class="contact-grid">
+          <!-- Left: Links -->
+          <div>
+            <p class="contact-intro reveal" id="contact-intro">
+              I'm open to <strong>senior Flutter / cross-platform roles</strong>, exciting consulting opportunities,
+              or just a great conversation about fintech engineering, clean architecture, or AI products.
+              Reach out — I usually respond within 24 hours.
             </p>
-            <div class="hire-features">
-              <div class="hire-feature">
-                <i class="fas fa-check-circle"></i>
-                Complete End-to-End Product Ownership
-              </div>
-              <div class="hire-feature">
-                <i class="fas fa-check-circle"></i>
-                Clean Architecture &amp; BLoC / Provider / GetX Expertise
-              </div>
-              <div class="hire-feature">
-                <i class="fas fa-check-circle"></i>
-                Full-Stack: FastAPI + GenAI Capability
-              </div>
-              <div class="hire-feature">
-                <i class="fas fa-check-circle"></i>
-                Fintech: KYC, Payments, Compliance Flows
-              </div>
-              <div class="hire-feature">
-                <i class="fas fa-check-circle"></i>
-                iOS · Android · Web — Single Codebase
-              </div>
+
+            <div class="contact-links reveal reveal-delay-1" id="contact-links">
+              <a href="mailto:pan.nachiketa@gmail.com" class="contact-link-item" id="contact-email">
+                <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-link-info">
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-value">pan.nachiketa@gmail.com</div>
+                </div>
+                <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.7rem; color:var(--fg-faint);"></i>
+              </a>
+
+              <a href="callto:+917523893279" class="contact-link-item" id="contact-phone">
+                <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-link-info">
+                  <div class="contact-link-label">Phone</div>
+                  <div class="contact-link-value">+91 7523 893 279</div>
+                </div>
+                <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.7rem; color:var(--fg-faint);"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank" class="contact-link-item"
+                id="contact-linkedin">
+                <div class="contact-link-icon" style="background: rgba(10,102,194,0.12); color: #6da3d9;"><i
+                    class="fab fa-linkedin-in"></i></div>
+                <div class="contact-link-info">
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-value">@nachiketapandey</div>
+                </div>
+                <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.7rem; color:var(--fg-faint);"></i>
+              </a>
+
+              <a href="https://github.com/nacpa" target="_blank" class="contact-link-item" id="contact-github">
+                <div class="contact-link-icon" style="background: rgba(255,255,255,0.04); color: var(--fg-muted);"><i
+                    class="fab fa-github"></i></div>
+                <div class="contact-link-info">
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-value">@nacpa</div>
+                </div>
+                <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.7rem; color:var(--fg-faint);"></i>
+              </a>
+
+              <a href="https://www.fluttersolution.com/" target="_blank" class="contact-link-item" id="contact-blog">
+                <div class="contact-link-icon" style="background: rgba(199,146,234,0.08); color: var(--accent);"><i
+                    class="fas fa-pen-nib"></i></div>
+                <div class="contact-link-info">
+                  <div class="contact-link-label">Flutter Blog</div>
+                  <div class="contact-link-value">fluttersolution.com</div>
+                </div>
+                <i class="fas fa-arrow-right" style="margin-left:auto; font-size:0.7rem; color:var(--fg-faint);"></i>
+              </a>
             </div>
-            <div class="hire-actions">
-              <a href="mailto:pan.nachiketa@gmail.com?subject=Opportunity%20Discussion" class="btn-primary"
-                id="hire-email-btn">
-                <i class="fas fa-paper-plane"></i> Schedule Discussion
-              </a>
-              <a href="callto:+917523893279" class="btn-ghost" id="hire-call-btn">
-                <i class="fas fa-phone"></i> Direct Call
-              </a>
+          </div>
+
+          <!-- Right: Hire Card -->
+          <div>
+            <div class="glass-card hire-card reveal reveal-delay-2" id="hire-card">
+              <div class="code-panel-header-hire">
+                <div class="panel-dots">
+                  <div class="panel-dot red"></div>
+                  <div class="panel-dot yellow"></div>
+                  <div class="panel-dot green"></div>
+                </div>
+                <span class="panel-filename">hire_me.dart</span>
+              </div>
+              <div class="hire-card-body">
+                <div class="hire-badge-pill">
+                  <i class="fas fa-bolt"></i> Available for Opportunities
+                </div>
+                <h3 class="hire-card-title">Senior Flutter &amp; Fintech Developer</h3>
+                <p class="hire-card-sub">
+                  Looking for a developer who can own complex cross-platform products from architecture to deployment?
+                  With 5+ years of fintech experience and full-stack capability, I bring both depth and breadth.
+                </p>
+                <div class="hire-features">
+                  <div class="hire-feature">
+                    <i class="fas fa-check-circle"></i>
+                    Complete End-to-End Product Ownership
+                  </div>
+                  <div class="hire-feature">
+                    <i class="fas fa-check-circle"></i>
+                    Clean Architecture &amp; BLoC / Provider / GetX Expertise
+                  </div>
+                  <div class="hire-feature">
+                    <i class="fas fa-check-circle"></i>
+                    Full-Stack: FastAPI + GenAI Capability
+                  </div>
+                  <div class="hire-feature">
+                    <i class="fas fa-check-circle"></i>
+                    Fintech: KYC, Payments, Compliance Flows
+                  </div>
+                  <div class="hire-feature">
+                    <i class="fas fa-check-circle"></i>
+                    iOS · Android · Web — Single Codebase
+                  </div>
+                </div>
+                <div class="hire-actions">
+                  <a href="mailto:pan.nachiketa@gmail.com?subject=Opportunity%20Discussion" class="btn-primary"
+                    id="hire-email-btn">
+                    <i class="fas fa-paper-plane"></i> Schedule Discussion
+                  </a>
+                  <a href="callto:+917523893279" class="btn-ghost" id="hire-call-btn">
+                    <i class="fas fa-phone"></i> Direct Call
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════
-  FOOTER
-═══════════════════════════════════════════ -->
-  <footer role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">Nachiketa <span>Pandey</span></div>
-      <div class="footer-copy">&copy; 2026 · Built with precision &amp; care</div>
-      <div class="footer-links">
-        <a href="./resume.html" class="footer-link" id="footer-resume">Resume</a>
-        <a href="https://www.fluttersolution.com/" target="_blank" class="footer-link" id="footer-blog">Blog</a>
-        <a href="https://github.com/nacpa" target="_blank" class="footer-link" id="footer-github">GitHub</a>
+    <!-- ═══════════════════════════════════════════
+    FOOTER
+  ═══════════════════════════════════════════ -->
+    <footer role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">Nachiketa <span>Pandey</span></div>
+        <div class="footer-copy">&copy; 2026 · Built with precision &amp; care</div>
+        <div class="footer-links">
+          <a href="./resume.html" class="footer-link" id="footer-resume">Resume</a>
+          <a href="https://www.fluttersolution.com/" target="_blank" class="footer-link" id="footer-blog">Blog</a>
+          <a href="https://github.com/nacpa" target="_blank" class="footer-link" id="footer-github">GitHub</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div><!-- /.ide-frame -->
 
   <!-- Back to Top -->
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+  COMMAND PALETTE
+═══════════════════════════════════════════ -->
+  <div class="cmd-palette-overlay" id="cmd-overlay">
+    <div class="cmd-palette" id="cmd-palette">
+      <div class="cmd-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or search..." autocomplete="off" />
+        <span class="cmd-shortcut">ESC</span>
+      </div>
+      <div class="cmd-results" id="cmd-results">
+        <div class="cmd-result-item" data-target="#hero"><i class="fas fa-home"></i> Go to Home <span class="cmd-section">Hero</span></div>
+        <div class="cmd-result-item" data-target="#about"><i class="fas fa-user"></i> About Me <span class="cmd-section">About.dart</span></div>
+        <div class="cmd-result-item" data-target="#experience"><i class="fab fa-git-alt"></i> Work Experience <span class="cmd-section">Experience.log</span></div>
+        <div class="cmd-result-item" data-target="#projects"><i class="fas fa-cube"></i> Projects <span class="cmd-section">Projects.dart</span></div>
+        <div class="cmd-result-item" data-target="#skills"><i class="fas fa-file-code"></i> Skills & Expertise <span class="cmd-section">pubspec.yaml</span></div>
+        <div class="cmd-result-item" data-target="#contact"><i class="fas fa-terminal"></i> Contact <span class="cmd-section">contact.sh</span></div>
+        <div class="cmd-result-item" data-target="resume"><i class="fas fa-file-alt"></i> Open Resume <span class="cmd-section">External</span></div>
+        <div class="cmd-result-item" data-target="github"><i class="fab fa-github"></i> GitHub Profile <span class="cmd-section">External</span></div>
+        <div class="cmd-result-item" data-target="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn <span class="cmd-section">External</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
   </button>
 
   <!-- ═══════════════════════════════════════════
@@ -905,6 +1009,27 @@
   <script>
     (function () {
       'use strict';
+
+      // ── Boot Sequence ─────────────────────────────────
+      const bootOverlay = document.getElementById('boot-overlay');
+      const bootLines = document.querySelectorAll('.boot-line');
+      const alreadyBooted = sessionStorage.getItem('devstation-booted');
+
+      if (alreadyBooted) {
+        bootOverlay.classList.add('boot-done');
+      } else {
+        let delay = 200;
+        bootLines.forEach((line, i) => {
+          setTimeout(() => {
+            line.classList.add('boot-visible');
+          }, delay);
+          delay += i === 0 ? 400 : i === bootLines.length - 1 ? 500 : 350;
+        });
+        setTimeout(() => {
+          bootOverlay.classList.add('boot-done');
+          sessionStorage.setItem('devstation-booted', '1');
+        }, delay + 400);
+      }
 
       // ── Typewriter ──────────────────────────────────
       const phrases = [
@@ -926,7 +1051,7 @@
         }
         if (typeEl) typeEl.textContent = current.slice(0, charIndex);
 
-        let delay = isDeleting ? 50 : 80;
+        let delay = isDeleting ? 40 : 70;
 
         if (!isDeleting && charIndex === current.length) {
           delay = 2200;
@@ -938,7 +1063,7 @@
         }
         setTimeout(type, delay);
       }
-      setTimeout(type, 800);
+      setTimeout(type, alreadyBooted ? 400 : 2800);
 
       // ── Nav scroll effect ───────────────────────────
       const nav = document.getElementById('main-nav');
@@ -1061,7 +1186,7 @@
           const target = document.querySelector(this.getAttribute('href'));
           if (target) {
             e.preventDefault();
-            const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
+            const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 84;
             window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
           }
         });
@@ -1069,14 +1194,14 @@
 
       // ── 3D Tilt on project card ─────────────────────
       const featuredCard = document.getElementById('project-nabh');
-      if (featuredCard) {
+      if (featuredCard && window.matchMedia('(min-width: 768px)').matches) {
         featuredCard.addEventListener('mousemove', function (e) {
           const rect = featuredCard.getBoundingClientRect();
           const x = e.clientX - rect.left - rect.width / 2;
           const y = e.clientY - rect.top - rect.height / 2;
-          const tiltX = (y / rect.height) * 4;
-          const tiltY = -(x / rect.width) * 4;
-          featuredCard.style.transform = `translateY(-6px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+          const tiltX = (y / rect.height) * 3;
+          const tiltY = -(x / rect.width) * 3;
+          featuredCard.style.transform = `translateY(-4px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
         });
         featuredCard.addEventListener('mouseleave', function () {
           featuredCard.style.transform = '';
@@ -1085,177 +1210,254 @@
         featuredCard.style.perspective = '1200px';
       }
 
-      // ── Global Fixed Background Canvas (Subtle Distant Star Skills & Interactive Focus) ──
+      // ── Command Palette (Cmd+K / Ctrl+K) ────────────
+      const cmdOverlay = document.getElementById('cmd-overlay');
+      const cmdInput = document.getElementById('cmd-input');
+      const cmdResults = document.getElementById('cmd-results');
+      const cmdItems = cmdResults.querySelectorAll('.cmd-result-item');
+      let activeCmd = -1;
+
+      function openCmdPalette() {
+        cmdOverlay.classList.add('open');
+        cmdInput.value = '';
+        cmdInput.focus();
+        activeCmd = -1;
+        filterCmdResults('');
+      }
+      function closeCmdPalette() {
+        cmdOverlay.classList.remove('open');
+        cmdInput.blur();
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          if (cmdOverlay.classList.contains('open')) {
+            closeCmdPalette();
+          } else {
+            openCmdPalette();
+          }
+        }
+        if (e.key === 'Escape' && cmdOverlay.classList.contains('open')) {
+          closeCmdPalette();
+        }
+        // Arrow keys
+        if (cmdOverlay.classList.contains('open')) {
+          const visible = Array.from(cmdItems).filter(i => i.style.display !== 'none');
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            activeCmd = Math.min(activeCmd + 1, visible.length - 1);
+            highlightCmd(visible);
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            activeCmd = Math.max(activeCmd - 1, 0);
+            highlightCmd(visible);
+          } else if (e.key === 'Enter' && activeCmd >= 0 && activeCmd < visible.length) {
+            e.preventDefault();
+            executeCmdItem(visible[activeCmd]);
+          }
+        }
+      });
+
+      cmdOverlay.addEventListener('click', function (e) {
+        if (e.target === cmdOverlay) closeCmdPalette();
+      });
+
+      cmdInput.addEventListener('input', function () {
+        filterCmdResults(this.value.toLowerCase());
+        activeCmd = -1;
+      });
+
+      cmdItems.forEach(item => {
+        item.addEventListener('click', function () {
+          executeCmdItem(this);
+        });
+      });
+
+      function filterCmdResults(query) {
+        cmdItems.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(query) ? '' : 'none';
+        });
+      }
+
+      function highlightCmd(visible) {
+        cmdItems.forEach(i => i.classList.remove('active'));
+        if (visible[activeCmd]) visible[activeCmd].classList.add('active');
+      }
+
+      function executeCmdItem(item) {
+        const target = item.dataset.target;
+        closeCmdPalette();
+        if (target === 'resume') {
+          window.open('./resume.html', '_blank');
+        } else if (target === 'github') {
+          window.open('https://github.com/nacpa', '_blank');
+        } else if (target === 'linkedin') {
+          window.open('https://www.linkedin.com/in/nachiketapandey/', '_blank');
+        } else {
+          const el = document.querySelector(target);
+          if (el) {
+            const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 84;
+            window.scrollTo({ top: el.offsetTop - offset, behavior: 'smooth' });
+          }
+        }
+      }
+
+      // ── Matrix Rain Background (Subtle Code Keywords) ──
       const canvas = document.createElement('canvas');
-      canvas.id = 'global-star-canvas';
-      canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;opacity:0.85;pointer-events:none;';
+      canvas.id = 'matrix-rain';
+      canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;opacity:0.8;pointer-events:none;';
       document.body.insertBefore(canvas, document.body.firstChild);
 
       const ctx = canvas.getContext('2d');
-      let particles = [];
-      let bgSkills = [];
-      let animFrameId;
-      let mouseX = -1000;
-      let mouseY = -1000;
-
-      window.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      }, { passive: true });
-
-      const skillList = [
-        { text: 'Flutter', type: 'primary' },
-        { text: 'Dart', type: 'primary' },
-        { text: 'BLoC State Mgmt', type: 'primary' },
-        { text: 'Clean Architecture', type: 'primary' },
-        { text: 'SDK Architecture', type: 'primary' },
-        { text: 'Provider / GetX', type: 'primary' },
-        { text: 'REST APIs', type: 'secondary' },
-        { text: 'FastAPI / Python', type: 'secondary' },
-        { text: 'Firebase', type: 'secondary' },
-        { text: 'KYC & Fintech', type: 'secondary' },
-        { text: 'CI/CD Pipelines', type: 'secondary' },
-        { text: 'Unit/Widget/Integration Testing', type: 'secondary' },
-        { text: 'GenAI / LLM Integration', type: 'secondary' },
-        { text: 'Payment Gateways', type: 'secondary' },
-        { text: 'UI Performance Tuning', type: 'secondary' }
+      const codeTokens = [
+        'Widget', 'build', 'State', 'BLoC', 'class', 'extends', 'final',
+        'const', 'return', 'async', 'await', 'void', 'String', 'int',
+        'List', 'Map', 'Future', 'Stream', 'emit', 'yield', 'import',
+        'override', 'setState', 'context', 'Navigator', 'Scaffold',
+        'Column', 'Row', 'Container', 'Padding', 'Center', 'Text',
+        'Icon', 'AppBar', 'FloatingActionButton', 'GestureDetector',
+        'bloc', 'cubit', 'provider', 'dio', 'http', 'json', 'api',
+        'flutter', 'dart', 'Firebase', 'Hive', 'GetX', 'Riverpod',
       ];
+
+      let columns = [];
+      let animFrame;
 
       function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        initColumns();
       }
 
-      function createElements() {
-        particles = [];
-        bgSkills = [];
-
-        // 1. Distant Twinkling Stars
-        const starCount = Math.min(120, Math.floor((canvas.width * canvas.height) / 12000));
-        for (let i = 0; i < starCount; i++) {
-          particles.push({
-            x: Math.random() * canvas.width,
+      function initColumns() {
+        const colWidth = 120;
+        const numCols = Math.ceil(canvas.width / colWidth);
+        columns = [];
+        for (let i = 0; i < numCols; i++) {
+          columns.push({
+            x: i * colWidth + Math.random() * 40,
             y: Math.random() * canvas.height,
-            r: Math.random() * 1.5 + 0.3,
-            vx: (Math.random() - 0.5) * 0.1,
-            vy: (Math.random() - 0.5) * 0.1,
-            alpha: Math.random() * 0.4 + 0.1,
-            twinkleSpeed: Math.random() * 0.008 + 0.002,
-            twinkleDir: Math.random() > 0.5 ? 1 : -1,
-            color: Math.random() > 0.6 ? '#818cf8' : (Math.random() > 0.5 ? '#5de6ff' : '#94a3b8'),
+            speed: 0.15 + Math.random() * 0.25,
+            tokens: [],
+            nextToken: 0,
           });
-        }
-
-        // 2. Unfocused Very Dull Background Skill Stars (Revealed on Focus)
-        const numSkills = Math.min(skillList.length * 2, Math.floor(canvas.width / 80) + 14);
-        for (let i = 0; i < numSkills; i++) {
-          const item = skillList[i % skillList.length];
-          const isPrimary = item.type === 'primary';
-
-          bgSkills.push({
-            text: item.text,
-            type: item.type,
-            x: Math.random() * (canvas.width - 180) + 30,
-            y: Math.random() * (canvas.height - 40) + 30,
-            vx: (Math.random() - 0.5) * 0.08,
-            vy: (Math.random() - 0.5) * 0.08,
-            fontSize: isPrimary ? 13 : 11,
-            baseAlpha: isPrimary ? 0.07 : 0.04, // Very dull by default like faint stars
-            color: isPrimary ? '129, 140, 248' : '93, 230, 255'
-          });
+          // Pre-fill tokens
+          const numTokens = 3 + Math.floor(Math.random() * 4);
+          for (let j = 0; j < numTokens; j++) {
+            columns[i].tokens.push({
+              text: codeTokens[Math.floor(Math.random() * codeTokens.length)],
+              offset: j * 28,
+              alpha: 0.04 + Math.random() * 0.06,
+            });
+          }
         }
       }
 
-      function drawCanvas() {
+      function drawMatrix() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.font = '500 11px "JetBrains Mono", monospace';
 
-        // 1. Render Dull Background Skill Stars (Illuminate on Cursor Focus)
-        bgSkills.forEach(s => {
-          ctx.save();
-
-          // Calculate distance to mouse cursor for focus revelation
-          const dx = mouseX - s.x;
-          const dy = mouseY - s.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          const focusRadius = 220;
-
-          let currentAlpha = s.baseAlpha;
-          let fontScale = 1;
-          let blurAmount = 3;
-
-          if (dist < focusRadius) {
-            const proximity = 1 - (dist / focusRadius);
-            currentAlpha = s.baseAlpha + (proximity * 0.55); // Brightens clearly when focused
-            fontScale = 1 + (proximity * 0.25);
-            blurAmount = 3 - (proximity * 2); // Becomes sharper on focus
+        columns.forEach(col => {
+          col.tokens.forEach(token => {
+            const y = (col.y + token.offset) % (canvas.height + 100);
+            ctx.fillStyle = `rgba(199, 146, 234, ${token.alpha})`;
+            ctx.fillText(token.text, col.x, y);
+          });
+          col.y += col.speed;
+          if (col.y > canvas.height + 100) {
+            col.y = -100;
+            // Shuffle tokens
+            col.tokens.forEach(t => {
+              t.text = codeTokens[Math.floor(Math.random() * codeTokens.length)];
+              t.alpha = 0.03 + Math.random() * 0.06;
+            });
           }
-
-          ctx.font = `600 ${Math.round(s.fontSize * fontScale)}px 'JetBrains Mono', monospace`;
-          ctx.fillStyle = `rgba(${s.color}, ${currentAlpha})`;
-          ctx.shadowColor = `rgba(${s.color}, ${currentAlpha * 1.8})`;
-          ctx.shadowBlur = blurAmount * 4;
-          ctx.fillText(s.text, s.x, s.y);
-          ctx.restore();
-
-          s.x += s.vx;
-          s.y += s.vy;
-          if (s.x < -120) s.x = canvas.width + 80;
-          if (s.x > canvas.width + 120) s.x = -100;
-          if (s.y < -30) s.y = canvas.height + 30;
-          if (s.y > canvas.height + 30) s.y = -20;
         });
 
-        // 2. Render Soft Distant Night Stars
-        particles.forEach(p => {
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-          ctx.fillStyle = p.color;
-          ctx.globalAlpha = p.alpha;
-          ctx.fill();
-
-          // Soft slow twinkle effect
-          p.alpha += p.twinkleSpeed * p.twinkleDir;
-          if (p.alpha >= 0.55) { p.alpha = 0.55; p.twinkleDir = -1; }
-          if (p.alpha <= 0.08) { p.alpha = 0.08; p.twinkleDir = 1; }
-
-          p.x += p.vx;
-          p.y += p.vy;
-          if (p.x < 0) p.x = canvas.width;
-          if (p.x > canvas.width) p.x = 0;
-          if (p.y < 0) p.y = canvas.height;
-          if (p.y > canvas.height) p.y = 0;
-        });
-        ctx.globalAlpha = 1;
-
-        // 3. Subtle Constellation Lines
-        for (let i = 0; i < particles.length; i++) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < 90) {
-              ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = '#818cf8';
-              ctx.globalAlpha = (1 - dist / 90) * 0.06;
-              ctx.lineWidth = 0.5;
-              ctx.stroke();
-              ctx.globalAlpha = 1;
-            }
-          }
-        }
-        animFrameId = requestAnimationFrame(drawCanvas);
+        animFrame = requestAnimationFrame(drawMatrix);
       }
 
       resizeCanvas();
-      createElements();
-      drawCanvas();
+      drawMatrix();
+      window.addEventListener('resize', resizeCanvas);
 
-      window.addEventListener('resize', () => {
-        resizeCanvas();
-        createElements();
+      // ── Theme Toggle ────────────────────────────────
+      const themeToggle = document.getElementById('theme-toggle');
+      let currentTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      themeToggle.addEventListener('click', () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
       });
+
+      // ── Nabh AI Canvas Animation ────────────────────
+      const nabhCanvas = document.getElementById('nabh-canvas');
+      if (nabhCanvas) {
+        const nCtx = nabhCanvas.getContext('2d');
+        let nNodes = [];
+        let nConnections = [];
+        let nWidth, nHeight;
+
+        function initNabh() {
+          nWidth = nabhCanvas.parentElement.clientWidth;
+          nHeight = nabhCanvas.parentElement.clientHeight;
+          nabhCanvas.width = nWidth;
+          nabhCanvas.height = nHeight;
+          nNodes = [];
+          for (let i = 0; i < 20; i++) {
+            nNodes.push({
+              x: Math.random() * nWidth,
+              y: Math.random() * nHeight,
+              vx: (Math.random() - 0.5) * 1,
+              vy: (Math.random() - 0.5) * 1,
+              radius: Math.random() * 2 + 1,
+            });
+          }
+        }
+
+        function drawNabh() {
+          nCtx.clearRect(0, 0, nWidth, nHeight);
+          
+          // Update and draw nodes
+          nCtx.fillStyle = 'rgba(139, 92, 246, 0.6)';
+          nNodes.forEach(node => {
+            node.x += node.vx;
+            node.y += node.vy;
+            if (node.x < 0 || node.x > nWidth) node.vx *= -1;
+            if (node.y < 0 || node.y > nHeight) node.vy *= -1;
+            
+            nCtx.beginPath();
+            nCtx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+            nCtx.fill();
+          });
+
+          // Draw connections
+          nCtx.lineWidth = 0.5;
+          for (let i = 0; i < nNodes.length; i++) {
+            for (let j = i + 1; j < nNodes.length; j++) {
+              const dx = nNodes[i].x - nNodes[j].x;
+              const dy = nNodes[i].y - nNodes[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 80) {
+                nCtx.strokeStyle = `rgba(139, 92, 246, ${1 - dist / 80})`;
+                nCtx.beginPath();
+                nCtx.moveTo(nNodes[i].x, nNodes[i].y);
+                nCtx.lineTo(nNodes[j].x, nNodes[j].y);
+                nCtx.stroke();
+              }
+            }
+          }
+          requestAnimationFrame(drawNabh);
+        }
+
+        initNabh();
+        drawNabh();
+        window.addEventListener('resize', initNabh);
+      }
 
     })();
   </script>
