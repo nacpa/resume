@@ -134,7 +134,7 @@ section h2 {
   font-weight: 700;
   color: var(--text-main);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: normal;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -202,7 +202,9 @@ h3 {
 
 .soft-chips li:hover,
 .soft-chips span:hover {
-  background: var(--border-color);
+  background: var(--text-main);
+  color: var(--bg-surface);
+  border-color: var(--text-main);
   transform: translateY(-2px);
   box-shadow: none;
 }
@@ -225,24 +227,16 @@ h3 {
 
 /* Lists */
 .bullet-list {
-  list-style: none;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .bullet-list li {
-  position: relative;
-  padding-left: 18px;
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 6px;
-}
-
-.bullet-list li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-weight: bold;
+  padding-left: 4px;
 }
 
 .bullet-list li b {
@@ -358,7 +352,7 @@ h3 {
   }
 
   body {
-    padding: 30px !important;
+    padding: 15px !important;
     margin: 0 !important;
     display: block;
     animation: none !important;
@@ -376,6 +370,10 @@ h3 {
     display: block !important;
   }
 
+  .no-print {
+    display: none !important;
+  }
+
   .hire-pill-trigger,
   .hire-modal-overlay,
   .fab-container,
@@ -390,14 +388,18 @@ h3 {
   .ide-frame {
     padding: 0 !important;
     margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
     min-height: auto !important;
     height: auto !important;
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   main {
     display: flex;
     flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .column-left,
@@ -579,23 +581,13 @@ h3 {
   }
 
   .bullet-list {
-    padding-left: 0;
-    margin-left: 10px;
-  }
-
-  .bullet-list li {
-    position: relative;
-    padding-left: 12px;
+    padding-left: 20px;
     margin-left: 0;
   }
 
-  .bullet-list li::before {
-    content: "•" !important;
-    color: #000000;
-    position: absolute;
-    left: 0;
-    top: 0;
-    line-height: inherit;
+  .bullet-list li {
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .column-left section,
@@ -652,10 +644,6 @@ h3 {
     margin-bottom: 2.2px;
     font-size: 0.91rem;
     line-height: 1.42;
-  }
-
-  .bullet-list li::before {
-    top: 0;
   }
 
   .job-date {
