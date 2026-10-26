@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
@@ -16,8 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="./portfolio.css" />
-    <link href="./style.css?v=1.1" rel="stylesheet" />
+    <script>
+      (function() {
+        var savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      })();
+    </script>
+    <link rel="stylesheet" href="./portfolio.css?v=8.0" media="screen" />
+    <link href="./style.css?v=8.0" rel="stylesheet" />
     <!-- PostHog Analytics -->
     <script>
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="Tl Ml El Il Al init Xl tu Jl Kl nu ho Yl au Gl capture getExtension eu xl vu calculateEventProperties du register register_once register_for_session unregister unregister_for_session gu Ql cu getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync mu identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset yu shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty fu uu createPersonProfile setInternalOrTestUser pu Fl Ol opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ou debug do ts getPageViewId captureTraceFeedback captureTraceMetric zl".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
@@ -54,6 +60,9 @@
         <span class="title-icon"><i class="fas fa-file-alt"></i></span>
         resume.pdf — DevStation
       </div>
+      <a href="./index.html" class="title-bar-back" title="Back to Portfolio">
+        <i class="fas fa-arrow-left"></i> <span>Portfolio</span>
+      </a>
     </div>
 
 
@@ -75,7 +84,6 @@
                         class="fab fa-linkedin-in"></i> @nachiketapandey</a>
                 <a href="https://portfolio.fluttersolution.com/?utm_source=ats_resume_pdf&utm_medium=document" class="print-only portfolio-print-link"
                     target="_blank"><i class="fas fa-globe"></i> portfolio.fluttersolution.com</a>
-
                 <a href="https://nabh.fluttersolution.com/?utm_source=ats_resume_pdf&utm_medium=document" class="project-print-link" target="_blank"><i
                         class="fas fa-robot"></i> nabh.fluttersolution.com</a>
             </div>
@@ -302,16 +310,19 @@
                 </section>
             </article>
         </main>
-        <!-- Draggable Floating Action Widget -->
-        <div class="fab-container print-only-hide" id="fabContainer">
-            <div class="fab-header" id="fabHeader" title="Drag to move">
-                <i class="fas fa-grip-vertical"></i>
-                <span>Quick Contact & Actions</span>
+        <!-- Floating Actions / Mobile Bottom Sheet -->
+        <div class="fab-container print-only-hide visible" id="fabContainer">
+            <div class="fab-handle" aria-hidden="true"></div>
+            <div class="fab-header" id="fabHeader" role="button" aria-expanded="true" tabindex="0">
+                <div class="fab-header-left">
+                    <i class="fas fa-bolt fab-icon-bolt"></i>
+                    <span>Quick Contact & Actions</span>
+                </div>
                 <button class="fab-toggle" id="fabToggle" aria-label="Toggle actions"><i
                         class="fas fa-chevron-down"></i></button>
             </div>
             <div class="fab-options" id="fabOptions">
-                <a href="javascript:window.print()" class="fab-btn" title="Download / Export PDF">
+                <a href="javascript:window.print()" class="fab-btn fab-btn-primary" title="Download / Export PDF">
                     <i class="fas fa-download"></i><span>Export PDF</span>
                 </a>
                 <a href="mailto:pan.nachiketa@gmail.com" class="fab-btn" title="Email">
@@ -323,45 +334,11 @@
                 <a href="https://www.linkedin.com/in/nachiketapandey/" target="_blank" class="fab-btn" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
                 </a>
-
+                <a href="./index.html" class="fab-btn fab-btn-home" title="Back to Portfolio">
+                    <i class="fas fa-arrow-left"></i><span>Back to Portfolio</span>
+                </a>
             </div>
         </div>
-
-        <!-- Exclusive Hire Deal Banner Modal -->
-        <div class="hire-modal-overlay print-only-hide" id="hireModalOverlay">
-            <div class="hire-modal-card">
-                <button class="hire-modal-close" id="hireModalClose" aria-label="Close deal">&times;</button>
-                <div class="hire-badge"><i class="fas fa-bolt"></i> EXCLUSIVE TALENT OFFER</div>
-                <h2>Limited-Time Opportunity</h2>
-                <p class="hire-subtitle">Looking for a Senior Flutter & Fintech Developer with 5+ years of proven
-                    delivery experience?</p>
-                <div class="hire-highlights">
-                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Complete End-to-End Ownership</div>
-                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Clean Architecture &
-                        BLoC/Provider/GetX</div>
-                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Full-Stack FastAPI & GenAI
-                        Capability</div>
-                </div>
-                <div class="hire-actions">
-                    <a href="mailto:pan.nachiketa@gmail.com?subject=Exclusive%20Role%20Discussion"
-                        class="hire-btn-primary"><i class="fas fa-paper-plane"></i> Schedule Discussion</a>
-                    <a href="callto:+917523893279" class="hire-btn-secondary"><i class="fas fa-phone-alt"></i> Direct
-                        Call</a>
-                </div>
-                <div class="hire-timer-bar" id="hireTimerBar">
-                    <span>Offer banner closing in <strong id="hireTimerCount">20</strong>s</span>
-                    <div class="timer-progress-track">
-                        <div class="timer-progress-fill" id="timerProgressFill"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Top Left Minimized Pill Trigger -->
-        <button class="hire-pill-trigger print-only-hide" id="hirePillTrigger">
-            <i class="fas fa-bolt"></i>
-            <span>Exclusive Offer</span>
-        </button>
 
         <script>
             const fabContainer = document.getElementById('fabContainer');
@@ -369,118 +346,77 @@
             const fabToggle = document.getElementById('fabToggle');
             const fabOptions = document.getElementById('fabOptions');
 
-            const hireModalOverlay = document.getElementById('hireModalOverlay');
-            const hireModalClose = document.getElementById('hireModalClose');
-            const hireTimerCount = document.getElementById('hireTimerCount');
-            const timerProgressFill = document.getElementById('timerProgressFill');
-            const hireTimerBar = document.getElementById('hireTimerBar');
-            const hirePillTrigger = document.getElementById('hirePillTrigger');
-
-            let isTimerFinished = false;
-
-            // 1. Show FAB popup after 3 seconds delay
-            window.addEventListener('DOMContentLoaded', () => {
-                setTimeout(() => {
-                    if (fabContainer) {
-                        fabContainer.classList.add('visible');
-                    }
-                }, 3000);
-
-                // Make the exclusive offer button visible immediately instead of showing the modal
-                if (hirePillTrigger) {
-                    hirePillTrigger.classList.add('visible');
+            // On mobile view, collapse bottom sheet by default so it doesn't obstruct reading
+            function initFabState() {
+                if (window.innerWidth <= 768 && fabOptions && fabToggle) {
+                    fabOptions.classList.add('collapsed');
+                    fabToggle.classList.add('collapsed');
+                    if (fabHeader) fabHeader.setAttribute('aria-expanded', 'false');
+                } else if (fabOptions && fabToggle) {
+                    fabOptions.classList.remove('collapsed');
+                    fabToggle.classList.remove('collapsed');
+                    if (fabHeader) fabHeader.setAttribute('aria-expanded', 'true');
                 }
+            }
+
+            initFabState();
+            window.addEventListener('resize', () => {
+                // Keep collapsed state responsive without overriding manual clicks
             });
 
-            function minimizeHireModal() {
-                isTimerFinished = true;
-                if (hireModalOverlay) {
-                    hireModalOverlay.classList.remove('visible');
-                }
-                if (hirePillTrigger) {
-                    hirePillTrigger.classList.add('visible');
-                }
-            }
-
-            function reopenHireModal() {
-                if (hireModalOverlay) {
-                    // Hide timer bar when reopened
-                    if (isTimerFinished && hireTimerBar) {
-                        hireTimerBar.style.display = 'none';
-                    }
-                    hireModalOverlay.classList.add('visible');
-                }
-            }
-
-            if (hireModalClose) {
-                hireModalClose.addEventListener('click', minimizeHireModal);
-            }
-
-            if (hirePillTrigger) {
-                hirePillTrigger.addEventListener('click', reopenHireModal);
-            }
-
             // Toggle visibility menu
-            if (fabToggle && fabOptions) {
-                fabToggle.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    fabOptions.classList.toggle('collapsed');
-                    fabToggle.classList.toggle('collapsed');
+            function toggleFabMenu(e) {
+                if (e) e.stopPropagation();
+                if (fabOptions && fabToggle) {
+                    const isCollapsed = fabOptions.classList.toggle('collapsed');
+                    fabToggle.classList.toggle('collapsed', isCollapsed);
+                    if (fabHeader) fabHeader.setAttribute('aria-expanded', !isCollapsed);
+                }
+            }
+
+            if (fabHeader) {
+                fabHeader.addEventListener('click', toggleFabMenu);
+                fabHeader.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleFabMenu(e);
+                    }
                 });
             }
 
-            // Drag and Drop functionality
-            if (fabContainer && fabHeader) {
+            if (fabToggle) {
+                fabToggle.addEventListener('click', toggleFabMenu);
+            }
+
+            // Desktop-only drag and drop functionality (do NOT intercept touch on mobile)
+            if (fabContainer && fabHeader && window.innerWidth > 768) {
                 let isDragging = false;
-                let currentX, currentY, initialX, initialY;
+                let currentX = 0, currentY = 0, initialX = 0, initialY = 0;
                 let xOffset = 0, yOffset = 0;
 
-                fabHeader.addEventListener('mousedown', dragStart);
-                document.addEventListener('mousemove', drag);
-                document.addEventListener('mouseup', dragEnd);
+                fabHeader.addEventListener('mousedown', (e) => {
+                    if (e.target === fabToggle || fabToggle.contains(e.target)) return;
+                    initialX = e.clientX - xOffset;
+                    initialY = e.clientY - yOffset;
+                    isDragging = true;
+                });
 
-                fabHeader.addEventListener('touchstart', dragStart, { passive: false });
-                document.addEventListener('touchmove', drag, { passive: false });
-                document.addEventListener('touchend', dragEnd);
-
-                function dragStart(e) {
-                    if (e.type === 'touchstart') {
-                        initialX = e.touches[0].clientX - xOffset;
-                        initialY = e.touches[0].clientY - yOffset;
-                    } else {
-                        initialX = e.clientX - xOffset;
-                        initialY = e.clientY - yOffset;
-                    }
-                    if (e.target === fabHeader || fabHeader.contains(e.target)) {
-                        isDragging = true;
-                    }
-                }
-
-                function drag(e) {
+                document.addEventListener('mousemove', (e) => {
                     if (isDragging) {
                         e.preventDefault();
-                        if (e.type === 'touchmove') {
-                            currentX = e.touches[0].clientX - initialX;
-                            currentY = e.touches[0].clientY - initialY;
-                        } else {
-                            currentX = e.clientX - initialX;
-                            currentY = e.clientY - initialY;
-                        }
+                        currentX = e.clientX - initialX;
+                        currentY = e.clientY - initialY;
                         xOffset = currentX;
                         yOffset = currentY;
-                        setTranslate(currentX, currentY, fabContainer);
+                        fabContainer.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
                     }
-                }
+                });
 
-                function setTranslate(xPos, yPos, el) {
-                    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
-                }
-
-                function dragEnd() {
+                document.addEventListener('mouseup', () => {
                     initialX = currentX;
                     initialY = currentY;
                     isDragging = false;
-                }
+                });
             }
         </script>
         <!-- Version control for PDF export -->
@@ -572,7 +508,7 @@
         columns.forEach(col => {
           col.tokens.forEach(token => {
             const y = (col.y + token.offset) % (canvas.height + 100);
-            ctx.fillStyle = `rgba(199, 146, 234, ${token.alpha})`;
+            ctx.fillStyle = `rgba(16, 185, 129, ${token.alpha})`;
             ctx.fillText(token.text, col.x, y);
           });
           col.y += col.speed;
@@ -594,11 +530,11 @@
 
       // ── Theme Toggle ────────────────────────────────
       const themeToggle = document.getElementById('theme-toggle');
-      let currentTheme = localStorage.getItem('theme') || 'dark';
+      let currentTheme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', currentTheme);
 
       themeToggle.addEventListener('click', () => {
-        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
         localStorage.setItem('theme', currentTheme);
       });
